@@ -1,6 +1,6 @@
 #include "Application.h"
 
-void Application::SetUp()
+void Application::GeometrySetUp()
 {
 	//Crear Vertex Array Object
 	GLuint VAO, VBO;
@@ -22,12 +22,49 @@ void Application::SetUp()
 	glEnableVertexAttribArray(0);
 }
 
+void Application::ProgramSetUp()
+{
+	std::string fragmentShader = leerArchivo("Shaders/FragmentShader.glsl");
+	std::string vertexShader = leerArchivo("Shaders/VertexShader.glsl");
+	ids["program"] = shaderfuncs.InitializeProgram(vertexShader, fragmentShader);
+}
+
+std::string Application::leerArchivo(const std::string& ruta) {
+	std::ifstream archivo(ruta); // abre el archivo en modo texto
+	if (!archivo) {
+		std::cerr << "No se pudo abrir el archivo: " << ruta << std::endl;
+		return "";
+	}
+
+	std::string contenido;
+	std::string linea;
+
+	while (std::getline(archivo, linea)) {
+		contenido += linea + '\n'; // conserva los saltos de línea
+	}
+
+	return contenido;
+}
+
+
+void Application::SetUp()
+{
+	ProgramSetUp();
+	GeometrySetUp();
+}
+
 void Application::Update()
 {
-	std::cout << "update" << std::endl;
+	//std::cout << "update" << std::endl;
 }
 
 void Application::Draw()
 {
-	std::cout << "draw" << std::endl;
+	//Seleccionar programa (shaders)
+	glUseProgram(ids["program"]);
+
+	//Seleccionar la geometria 
+	glBindVertexArray(ids["triangle"]);
+
+	glDrawArrays(GL_TRIANGLES, 0, 3);
 }
