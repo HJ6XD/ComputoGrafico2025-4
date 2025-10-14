@@ -2,6 +2,13 @@
 #include "GLFW/glfw3.h"
 #include "Application.h"
 #include <string>
+
+void KeyCallBack(GLFWwindow* _window, int key, int scancode, int action, int code) {
+    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
+        glfwSetWindowShouldClose(_window, true);
+    }
+}
+
 int main(void)
 {
     GLFWwindow* window;
@@ -27,6 +34,9 @@ int main(void)
     }
 
     app.SetUp();
+
+    glfwSetKeyCallback(window, KeyCallBack);
+
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {

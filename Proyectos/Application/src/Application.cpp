@@ -75,6 +75,7 @@ void Application::SetUp()
 void Application::Update()
 {
 	time += 0.01f;
+	
 }
 
 void Application::Draw()

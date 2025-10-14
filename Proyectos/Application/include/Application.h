@@ -15,8 +15,9 @@ private:
 	void GeometrySetUp();
 	void ProgramSetUp();
 	float time{ 0.0f };
-public: 
 	std::string leerArchivo(const std::string& nombreArchivo);
+	;
+public: 
 	void SetUp();
 	void Update();
 	void Draw();
