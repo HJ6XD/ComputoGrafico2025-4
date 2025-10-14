@@ -3,31 +3,21 @@
 #include "Application.h"
 #include <string>
 
-void KeyCallBack(GLFWwindow* _window, int key, int scancode, int action, int code) {
-    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
-        glfwSetWindowShouldClose(_window, true);
-    }
-}
+Application app;
 
+void myCallBack(GLFWwindow* _window, int key, int scancode, int action, int code) {
+    app.KeyCallBack(key, scancode, action, code);
+}
 int main(void)
 {
-    GLFWwindow* window;
-    Application app;
-
     /* Initialize the library */
     if (!glfwInit())
         return -1;
 
-    /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(1024, 768, "Hello Application", NULL, NULL);
-    if (!window)
-    {
-        glfwTerminate();
-        return -1;
-    }
-
+    
+    app.window = glfwCreateWindow(1024, 768, "Hello Application", NULL, NULL);
+    glfwMakeContextCurrent(app.window);
     /* Make the window's context current */
-    glfwMakeContextCurrent(window);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         return -1;
@@ -35,10 +25,10 @@ int main(void)
 
     app.SetUp();
 
-    glfwSetKeyCallback(window, KeyCallBack);
+    glfwSetKeyCallback(app.window, myCallBack);
 
     /* Loop until the user closes the window */
-    while (!glfwWindowShouldClose(window))
+    while (!glfwWindowShouldClose(app.window))
     {
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
@@ -47,7 +37,7 @@ int main(void)
         app.Update();
 
         app.Draw();
-        glfwSwapBuffers(window);
+        glfwSwapBuffers(app.window);
     }
 
     glfwTerminate();

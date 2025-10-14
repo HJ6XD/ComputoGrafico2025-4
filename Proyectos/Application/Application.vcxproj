@@ -29,7 +29,9 @@
     <ClInclude Include="include\ShaderFuncs.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Shaders\FragmentCamera.glsl" />
     <None Include="Shaders\FragmentShader.glsl" />
+    <None Include="Shaders\VertexCamera.glsl" />
     <None Include="Shaders\VertexShader.glsl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -118,7 +120,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>include;../../Libs/glfw/include;../../Libs/glad</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;../../Libs/glfw/include;../../Libs/glad;../../Libs/glm</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
