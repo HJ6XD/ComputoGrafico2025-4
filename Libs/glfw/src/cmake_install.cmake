@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src
+# Install script for directory: C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,6 +35,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/install_local_manifest.txt"
+  file(WRITE "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

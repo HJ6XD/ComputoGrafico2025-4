@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\CMakeFiles\6c5056230a9e734a24c4bdb67de03256\update_mappings.rule">
+    <CustomBuild Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\CMakeFiles\4564823ab8f265f671e3c7373b89ca9d\update_mappings.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\mappings.h.in">
+    <None Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\mappings.h.in">
       <Filter>Header Files</Filter>
     </None>
-    <None Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\CMake\GenerateMappings.cmake" />
-    <None Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\CMakeFiles\update_mappings" />
+    <None Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\CMakeFiles\update_mappings" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{7F41D702-60E0-3B6B-A066-101AEF8DDF01}</UniqueIdentifier>
+      <UniqueIdentifier>{B914763A-6F17-3F3A-A672-2377A9ECB24C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{66D5867B-3613-3F42-8C44-3112F3BBC976}</UniqueIdentifier>
+      <UniqueIdentifier>{92F77610-82A7-3F80-933A-F0D4A890F8DF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

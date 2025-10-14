@@ -1,4 +1,4 @@
-﻿  Building Custom Rule C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/CMakeLists.txt
+﻿  Building Custom Rule C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/CMakeLists.txt
   context.c
   init.c
   input.c
@@ -23,5 +23,5 @@
   Compilando...
   wgl_context.c
   Generando código...
-     Creando biblioteca C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/Debug/glfw3dll.lib y objeto C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/Debug/glfw3dll.exp
-  glfw.vcxproj -> C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\Debug\glfw3.dll
+     Creando biblioteca C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/Debug/glfw3dll.lib y objeto C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/Debug/glfw3dll.exp
+  glfw.vcxproj -> C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\Debug\glfw3.dll

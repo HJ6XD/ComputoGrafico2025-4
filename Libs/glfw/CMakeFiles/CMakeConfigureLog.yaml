@@ -46,6 +46,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Estudiante\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Estudiante\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Estudiante\\AppData\\Local\\Programs\\Git\\cmd"
   -
     kind: "message-v1"
     backtrace:
@@ -62,9 +63,9 @@ events:
       The output was:
       0
       VersiÃ³n de MSBuild 17.13.19+0d9f5a35a para .NET Framework
-      CompilaciÃ³n iniciada a las 06/10/2025 05:37:45 p. m..
+      CompilaciÃ³n iniciada a las 13/10/2025 06:15:27 p. m..
       
-      Proyecto "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\4.1.2\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+      Proyecto "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\4.1.2\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
       PrepareForBuild:
         Creando directorio "Debug\\".
         La salida estructurada estÃ¡ habilitada. El formato del diagnÃ³stico del compilador reflejarÃ¡ la jerarquÃ­a de errores. Consulte https://aka.ms/cpp/structured-output para obtener mÃ¡s detalles.
@@ -77,7 +78,7 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\4.1.2\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\4.1.2\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -85,13 +86,13 @@ events:
       FinalizeBuildStatus:
         Se eliminarÃ¡ el archivo "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      CompilaciÃ³n del proyecto terminada "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\4.1.2\\CompilerIdC\\CompilerIdC.vcxproj" (destinos predeterminados).
+      CompilaciÃ³n del proyecto terminada "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\4.1.2\\CompilerIdC\\CompilerIdC.vcxproj" (destinos predeterminados).
       
       CompilaciÃ³n correcta.
           0 Advertencia(s)
           0 Errores
       
-      Tiempo transcurrido 00:00:00.39
+      Tiempo transcurrido 00:00:00.35
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -99,7 +100,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/4.1.2/CompilerIdC/CompilerIdC.exe
+        C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/4.1.2/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "find-v1"
@@ -135,6 +136,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Estudiante/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/link.exe"
@@ -151,6 +153,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Estudiante\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Estudiante\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Estudiante\\AppData\\Local\\Programs\\Git\\cmd"
   -
     kind: "find-v1"
     backtrace:
@@ -185,6 +188,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Estudiante/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/lld-link.exe"
@@ -222,6 +226,9 @@ events:
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/lld-link.com"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/lld-link.exe"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/lld-link"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/lld-link.com"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/lld-link.exe"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/lld-link"
     found: false
     search_context:
       ENV{PATH}:
@@ -236,6 +243,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Estudiante\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Estudiante\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Estudiante\\AppData\\Local\\Programs\\Git\\cmd"
   -
     kind: "find-v1"
     backtrace:
@@ -268,6 +276,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Estudiante/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/link.exe"
@@ -284,6 +293,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Estudiante\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Estudiante\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Estudiante\\AppData\\Local\\Programs\\Git\\cmd"
   -
     kind: "find-v1"
     backtrace:
@@ -316,6 +326,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Estudiante/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/mt.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/mt.exe"
@@ -353,6 +364,9 @@ events:
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/mt.com"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/mt.exe"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/mt"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/mt.com"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/mt.exe"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/mt"
     found: false
     search_context:
       ENV{PATH}:
@@ -367,6 +381,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Estudiante\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Estudiante\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Estudiante\\AppData\\Local\\Programs\\Git\\cmd"
   -
     kind: "find-v1"
     backtrace:
@@ -399,6 +414,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Estudiante/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/lib.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/lib.exe"
@@ -415,6 +431,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Estudiante\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Estudiante\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Estudiante\\AppData\\Local\\Programs\\Git\\cmd"
   -
     kind: "find-v1"
     backtrace:
@@ -449,6 +466,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Estudiante/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -495,6 +513,9 @@ events:
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/rc.com"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/rc.exe"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/rc"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/rc.com"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/rc.exe"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/rc"
       - "C:/Program Files/bin/rc.com"
       - "C:/Program Files/bin/rc.exe"
       - "C:/Program Files/bin/rc"
@@ -545,6 +566,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Estudiante\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Estudiante\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Estudiante\\AppData\\Local\\Programs\\Git\\cmd"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/GLFW"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -560,8 +582,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-2e1lw4"
-      binary: "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-2e1lw4"
+      source: "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-n1ykwe"
+      binary: "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-n1ykwe"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -570,40 +592,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-2e1lw4'
+        Change Dir: 'C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-n1ykwe'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_102d3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8d4da.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         VersiÃ³n de MSBuild 17.13.19+0d9f5a35a para .NET Framework
-        CompilaciÃ³n iniciada a las 06/10/2025 05:37:45 p. m..
+        CompilaciÃ³n iniciada a las 13/10/2025 06:15:28 p. m..
         
-        Proyecto "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-2e1lw4\\cmTC_102d3.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n1ykwe\\cmTC_8d4da.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_102d3.dir\\Debug\\".
+          Creando directorio "cmTC_8d4da.dir\\Debug\\".
           La salida estructurada estÃ¡ habilitada. El formato del diagnÃ³stico del compilador reflejarÃ¡ la jerarquÃ­a de errores. Consulte https://aka.ms/cpp/structured-output para obtener mÃ¡s detalles.
-          Creando directorio "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-2e1lw4\\Debug\\".
-          Creando directorio "cmTC_102d3.dir\\Debug\\cmTC_102d3.tlog\\".
+          Creando directorio "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n1ykwe\\Debug\\".
+          Creando directorio "cmTC_8d4da.dir\\Debug\\cmTC_8d4da.tlog\\".
         InitializeBuildStatus:
-          Se crearÃ¡ "cmTC_102d3.dir\\Debug\\cmTC_102d3.tlog\\unsuccessfulbuild" porque se especificÃ³ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_102d3.dir\\Debug\\cmTC_102d3.tlog\\unsuccessfulbuild".
+          Se crearÃ¡ "cmTC_8d4da.dir\\Debug\\cmTC_8d4da.tlog\\unsuccessfulbuild" porque se especificÃ³ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_8d4da.dir\\Debug\\cmTC_8d4da.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_102d3.dir\\Debug\\\\" /Fd"cmTC_102d3.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_8d4da.dir\\Debug\\\\" /Fd"cmTC_8d4da.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           Compilador de optimizaciÃ³n de C/C++ de Microsoft (R) versiÃ³n 19.43.34809 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_102d3.dir\\Debug\\\\" /Fd"cmTC_102d3.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_8d4da.dir\\Debug\\\\" /Fd"cmTC_8d4da.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-2e1lw4\\Debug\\cmTC_102d3.exe" /INCREMENTAL /ILK:"cmTC_102d3.dir\\Debug\\cmTC_102d3.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-2e1lw4/Debug/cmTC_102d3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-2e1lw4/Debug/cmTC_102d3.lib" /MACHINE:X64  /machine:x64 cmTC_102d3.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_102d3.vcxproj -> C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-2e1lw4\\Debug\\cmTC_102d3.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n1ykwe\\Debug\\cmTC_8d4da.exe" /INCREMENTAL /ILK:"cmTC_8d4da.dir\\Debug\\cmTC_8d4da.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-n1ykwe/Debug/cmTC_8d4da.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-n1ykwe/Debug/cmTC_8d4da.lib" /MACHINE:X64  /machine:x64 cmTC_8d4da.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_8d4da.vcxproj -> C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n1ykwe\\Debug\\cmTC_8d4da.exe
         FinalizeBuildStatus:
-          Se eliminarÃ¡ el archivo "cmTC_102d3.dir\\Debug\\cmTC_102d3.tlog\\unsuccessfulbuild".
-          Aplicando tarea Touch a "cmTC_102d3.dir\\Debug\\cmTC_102d3.tlog\\cmTC_102d3.lastbuildstate".
-        CompilaciÃ³n del proyecto terminada "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-2e1lw4\\cmTC_102d3.vcxproj" (destinos predeterminados).
+          Se eliminarÃ¡ el archivo "cmTC_8d4da.dir\\Debug\\cmTC_8d4da.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_8d4da.dir\\Debug\\cmTC_8d4da.tlog\\cmTC_8d4da.lastbuildstate".
+        CompilaciÃ³n del proyecto terminada "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n1ykwe\\cmTC_8d4da.vcxproj" (destinos predeterminados).
         
         CompilaciÃ³n correcta.
             0 Advertencia(s)
             0 Errores
         
-        Tiempo transcurrido 00:00:00.34
+        Tiempo transcurrido 00:00:00.33
         
       exitCode: 0
   -
@@ -645,46 +667,46 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-n6igjp"
-      binary: "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-n6igjp"
+      source: "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-6hw11s"
+      binary: "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-6hw11s"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMake/modules"
+      CMAKE_MODULE_PATH: "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-n6igjp'
+        Change Dir: 'C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-6hw11s'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8ecb3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a3bff.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         VersiÃ³n de MSBuild 17.13.19+0d9f5a35a para .NET Framework
-        CompilaciÃ³n iniciada a las 06/10/2025 05:37:47 p. m..
+        CompilaciÃ³n iniciada a las 13/10/2025 06:15:29 p. m..
         
-        Proyecto "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n6igjp\\cmTC_8ecb3.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-6hw11s\\cmTC_a3bff.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_8ecb3.dir\\Debug\\".
+          Creando directorio "cmTC_a3bff.dir\\Debug\\".
           La salida estructurada estÃ¡ habilitada. El formato del diagnÃ³stico del compilador reflejarÃ¡ la jerarquÃ­a de errores. Consulte https://aka.ms/cpp/structured-output para obtener mÃ¡s detalles.
-          Creando directorio "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n6igjp\\Debug\\".
-          Creando directorio "cmTC_8ecb3.dir\\Debug\\cmTC_8ecb3.tlog\\".
+          Creando directorio "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-6hw11s\\Debug\\".
+          Creando directorio "cmTC_a3bff.dir\\Debug\\cmTC_a3bff.tlog\\".
         InitializeBuildStatus:
-          Se crearÃ¡ "cmTC_8ecb3.dir\\Debug\\cmTC_8ecb3.tlog\\unsuccessfulbuild" porque se especificÃ³ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_8ecb3.dir\\Debug\\cmTC_8ecb3.tlog\\unsuccessfulbuild".
+          Se crearÃ¡ "cmTC_a3bff.dir\\Debug\\cmTC_a3bff.tlog\\unsuccessfulbuild" porque se especificÃ³ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_a3bff.dir\\Debug\\cmTC_a3bff.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_8ecb3.dir\\Debug\\\\" /Fd"cmTC_8ecb3.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n6igjp\\src.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_a3bff.dir\\Debug\\\\" /Fd"cmTC_a3bff.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-6hw11s\\src.c"
           Compilador de optimizaciÃ³n de C/C++ de Microsoft (R) versiÃ³n 19.43.34809 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_8ecb3.dir\\Debug\\\\" /Fd"cmTC_8ecb3.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n6igjp\\src.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_a3bff.dir\\Debug\\\\" /Fd"cmTC_a3bff.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-6hw11s\\src.c"
           src.c
-        C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n6igjp\\src.c(1,10): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n6igjp\\cmTC_8ecb3.vcxproj]
-        CompilaciÃ³n del proyecto terminada "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n6igjp\\cmTC_8ecb3.vcxproj" (destinos predeterminados) -- ERROR.
+        C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-6hw11s\\src.c(1,10): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-6hw11s\\cmTC_a3bff.vcxproj]
+        CompilaciÃ³n del proyecto terminada "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-6hw11s\\cmTC_a3bff.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n6igjp\\cmTC_8ecb3.vcxproj" (destino predeterminado) (1) ->
+        "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-6hw11s\\cmTC_a3bff.vcxproj" (destino predeterminado) (1) ->
         (ClCompile destino) -> 
-          C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n6igjp\\src.c(1,10): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-n6igjp\\cmTC_8ecb3.vcxproj]
+          C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-6hw11s\\src.c(1,10): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-6hw11s\\cmTC_a3bff.vcxproj]
         
             0 Advertencia(s)
             1 Errores
@@ -702,53 +724,53 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-etqunj"
-      binary: "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-etqunj"
+      source: "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-4ytqe9"
+      binary: "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-4ytqe9"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMake/modules"
+      CMAKE_MODULE_PATH: "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-etqunj'
+        Change Dir: 'C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-4ytqe9'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_810ba.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_226f2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         VersiÃ³n de MSBuild 17.13.19+0d9f5a35a para .NET Framework
-        CompilaciÃ³n iniciada a las 06/10/2025 05:37:47 p. m..
+        CompilaciÃ³n iniciada a las 13/10/2025 06:15:29 p. m..
         
-        Proyecto "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-etqunj\\cmTC_810ba.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-4ytqe9\\cmTC_226f2.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_810ba.dir\\Debug\\".
+          Creando directorio "cmTC_226f2.dir\\Debug\\".
           La salida estructurada estÃ¡ habilitada. El formato del diagnÃ³stico del compilador reflejarÃ¡ la jerarquÃ­a de errores. Consulte https://aka.ms/cpp/structured-output para obtener mÃ¡s detalles.
-          Creando directorio "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-etqunj\\Debug\\".
-          Creando directorio "cmTC_810ba.dir\\Debug\\cmTC_810ba.tlog\\".
+          Creando directorio "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-4ytqe9\\Debug\\".
+          Creando directorio "cmTC_226f2.dir\\Debug\\cmTC_226f2.tlog\\".
         InitializeBuildStatus:
-          Se crearÃ¡ "cmTC_810ba.dir\\Debug\\cmTC_810ba.tlog\\unsuccessfulbuild" porque se especificÃ³ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_810ba.dir\\Debug\\cmTC_810ba.tlog\\unsuccessfulbuild".
+          Se crearÃ¡ "cmTC_226f2.dir\\Debug\\cmTC_226f2.tlog\\unsuccessfulbuild" porque se especificÃ³ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_226f2.dir\\Debug\\cmTC_226f2.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_810ba.dir\\Debug\\\\" /Fd"cmTC_810ba.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-etqunj\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_226f2.dir\\Debug\\\\" /Fd"cmTC_226f2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-4ytqe9\\CheckFunctionExists.c"
           Compilador de optimizaciÃ³n de C/C++ de Microsoft (R) versiÃ³n 19.43.34809 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_810ba.dir\\Debug\\\\" /Fd"cmTC_810ba.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-etqunj\\CheckFunctionExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_226f2.dir\\Debug\\\\" /Fd"cmTC_226f2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-4ytqe9\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-etqunj\\Debug\\cmTC_810ba.exe" /INCREMENTAL /ILK:"cmTC_810ba.dir\\Debug\\cmTC_810ba.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-etqunj/Debug/cmTC_810ba.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-etqunj/Debug/cmTC_810ba.lib" /MACHINE:X64  /machine:x64 cmTC_810ba.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-etqunj\\cmTC_810ba.vcxproj]
-        CompilaciÃ³n del proyecto terminada "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-etqunj\\cmTC_810ba.vcxproj" (destinos predeterminados) -- ERROR.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-4ytqe9\\Debug\\cmTC_226f2.exe" /INCREMENTAL /ILK:"cmTC_226f2.dir\\Debug\\cmTC_226f2.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-4ytqe9/Debug/cmTC_226f2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-4ytqe9/Debug/cmTC_226f2.lib" /MACHINE:X64  /machine:x64 cmTC_226f2.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-4ytqe9\\cmTC_226f2.vcxproj]
+        CompilaciÃ³n del proyecto terminada "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-4ytqe9\\cmTC_226f2.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-etqunj\\cmTC_810ba.vcxproj" (destino predeterminado) (1) ->
+        "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-4ytqe9\\cmTC_226f2.vcxproj" (destino predeterminado) (1) ->
         (Link destino) -> 
-          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-etqunj\\cmTC_810ba.vcxproj]
+          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-4ytqe9\\cmTC_226f2.vcxproj]
         
             0 Advertencia(s)
             1 Errores
         
-        Tiempo transcurrido 00:00:00.26
+        Tiempo transcurrido 00:00:00.28
         
       exitCode: 1
   -
@@ -761,53 +783,53 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-3p22qy"
-      binary: "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-3p22qy"
+      source: "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-jjkkgp"
+      binary: "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-jjkkgp"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMake/modules"
+      CMAKE_MODULE_PATH: "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-3p22qy'
+        Change Dir: 'C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-jjkkgp'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ebf26.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3939f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         VersiÃ³n de MSBuild 17.13.19+0d9f5a35a para .NET Framework
-        CompilaciÃ³n iniciada a las 06/10/2025 05:37:47 p. m..
+        CompilaciÃ³n iniciada a las 13/10/2025 06:15:30 p. m..
         
-        Proyecto "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-3p22qy\\cmTC_ebf26.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-jjkkgp\\cmTC_3939f.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_ebf26.dir\\Debug\\".
+          Creando directorio "cmTC_3939f.dir\\Debug\\".
           La salida estructurada estÃ¡ habilitada. El formato del diagnÃ³stico del compilador reflejarÃ¡ la jerarquÃ­a de errores. Consulte https://aka.ms/cpp/structured-output para obtener mÃ¡s detalles.
-          Creando directorio "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-3p22qy\\Debug\\".
-          Creando directorio "cmTC_ebf26.dir\\Debug\\cmTC_ebf26.tlog\\".
+          Creando directorio "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-jjkkgp\\Debug\\".
+          Creando directorio "cmTC_3939f.dir\\Debug\\cmTC_3939f.tlog\\".
         InitializeBuildStatus:
-          Se crearÃ¡ "cmTC_ebf26.dir\\Debug\\cmTC_ebf26.tlog\\unsuccessfulbuild" porque se especificÃ³ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_ebf26.dir\\Debug\\cmTC_ebf26.tlog\\unsuccessfulbuild".
+          Se crearÃ¡ "cmTC_3939f.dir\\Debug\\cmTC_3939f.tlog\\unsuccessfulbuild" porque se especificÃ³ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_3939f.dir\\Debug\\cmTC_3939f.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_ebf26.dir\\Debug\\\\" /Fd"cmTC_ebf26.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-3p22qy\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_3939f.dir\\Debug\\\\" /Fd"cmTC_3939f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-jjkkgp\\CheckFunctionExists.c"
           Compilador de optimizaciÃ³n de C/C++ de Microsoft (R) versiÃ³n 19.43.34809 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_ebf26.dir\\Debug\\\\" /Fd"cmTC_ebf26.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-3p22qy\\CheckFunctionExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_3939f.dir\\Debug\\\\" /Fd"cmTC_3939f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-jjkkgp\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-3p22qy\\Debug\\cmTC_ebf26.exe" /INCREMENTAL /ILK:"cmTC_ebf26.dir\\Debug\\cmTC_ebf26.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-3p22qy/Debug/cmTC_ebf26.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-3p22qy/Debug/cmTC_ebf26.lib" /MACHINE:X64  /machine:x64 cmTC_ebf26.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-3p22qy\\cmTC_ebf26.vcxproj]
-        CompilaciÃ³n del proyecto terminada "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-3p22qy\\cmTC_ebf26.vcxproj" (destinos predeterminados) -- ERROR.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-jjkkgp\\Debug\\cmTC_3939f.exe" /INCREMENTAL /ILK:"cmTC_3939f.dir\\Debug\\cmTC_3939f.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-jjkkgp/Debug/cmTC_3939f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/CMakeScratch/TryCompile-jjkkgp/Debug/cmTC_3939f.lib" /MACHINE:X64  /machine:x64 cmTC_3939f.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-jjkkgp\\cmTC_3939f.vcxproj]
+        CompilaciÃ³n del proyecto terminada "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-jjkkgp\\cmTC_3939f.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-3p22qy\\cmTC_ebf26.vcxproj" (destino predeterminado) (1) ->
+        "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-jjkkgp\\cmTC_3939f.vcxproj" (destino predeterminado) (1) ->
         (Link destino) -> 
-          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [C:\\Users\\Estudiante\\Desktop\\Carpeta de Diego\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-3p22qy\\cmTC_ebf26.vcxproj]
+          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Libs\\glfw\\CMakeFiles\\CMakeScratch\\TryCompile-jjkkgp\\cmTC_3939f.vcxproj]
         
             0 Advertencia(s)
             1 Errores
         
-        Tiempo transcurrido 00:00:00.27
+        Tiempo transcurrido 00:00:00.25
         
       exitCode: 1
   -
@@ -841,6 +863,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Estudiante/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -892,6 +915,9 @@ events:
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/doxygen.com"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/doxygen.exe"
       - "C:/Users/Estudiante/AppData/Local/GitHubDesktop/bin/doxygen"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/doxygen.com"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/doxygen.exe"
+      - "C:/Users/Estudiante/AppData/Local/Programs/Git/cmd/doxygen"
       - "C:/Program Files/bin/doxygen.com"
       - "C:/Program Files/bin/doxygen.exe"
       - "C:/Program Files/bin/doxygen"
@@ -957,6 +983,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Estudiante\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Estudiante\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Estudiante\\AppData\\Local\\Programs\\Git\\cmd"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/GLFW"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"

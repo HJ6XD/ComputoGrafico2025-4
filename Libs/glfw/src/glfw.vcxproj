@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{43CB9EEC-DFE7-351E-A153-EE73E0796DA1}</ProjectGuid>
+    <ProjectGuid>{C16A23F1-6008-30F7-9354-DD06C3F3B725}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glfw.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glfw.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glfw.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glfw.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
@@ -87,7 +87,7 @@
   <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -110,10 +110,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";_GLFW_BUILD_DLL</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -128,9 +128,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/Debug/glfw3dll.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/Debug/glfw3dll.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/Debug/glfw3.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/Debug/glfw3.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem></SubSystem>
       <Version>3.4</Version>
@@ -141,7 +141,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>
@@ -165,10 +165,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";_GLFW_BUILD_DLL</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -183,9 +183,9 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/Release/glfw3dll.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/Release/glfw3dll.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/Release/glfw3.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/Release/glfw3.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem></SubSystem>
       <Version>3.4</Version>
@@ -196,7 +196,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>
@@ -220,10 +220,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";_GLFW_BUILD_DLL</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -238,9 +238,9 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/MinSizeRel/glfw3dll.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/MinSizeRel/glfw3dll.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/MinSizeRel/glfw3.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/MinSizeRel/glfw3.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem></SubSystem>
       <Version>3.4</Version>
@@ -251,7 +251,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -274,10 +274,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";_GLFW_BUILD_DLL</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -292,9 +292,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/RelWithDebInfo/glfw3dll.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/RelWithDebInfo/glfw3dll.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/RelWithDebInfo/glfw3.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/RelWithDebInfo/glfw3.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem></SubSystem>
       <Version>3.4</Version>
@@ -304,11 +304,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw" "-BC:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw" --check-stamp-file "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw -BC:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw --check-stamp-file C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -316,12 +316,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\CMake\glfw3.pc.in;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\glfw.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\CMake\glfw3.pc.in;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\glfw.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw" "-BC:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw" --check-stamp-file "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw -BC:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw --check-stamp-file C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -329,12 +329,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\CMake\glfw3.pc.in;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\glfw.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\CMake\glfw3.pc.in;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\glfw.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw" "-BC:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw" --check-stamp-file "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw -BC:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw --check-stamp-file C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -342,12 +342,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\CMake\glfw3.pc.in;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\glfw.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\CMake\glfw3.pc.in;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\glfw.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw" "-BC:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw" --check-stamp-file "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw -BC:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw --check-stamp-file C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -355,50 +355,50 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\CMake\glfw3.pc.in;C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\glfw.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\CMake\glfw3.pc.in;C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\glfw.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include\GLFW\glfw3.h" />
-    <ClInclude Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\include\GLFW\glfw3native.h" />
-    <ClInclude Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\internal.h" />
-    <ClInclude Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\platform.h" />
-    <ClInclude Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\mappings.h" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\context.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\init.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\input.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\monitor.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\platform.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\vulkan.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\window.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\egl_context.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\osmesa_context.c" />
-    <ClInclude Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\null_platform.h" />
-    <ClInclude Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\null_joystick.h" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\null_init.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\null_monitor.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\null_window.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\null_joystick.c" />
-    <ClInclude Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\win32_time.h" />
-    <ClInclude Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\win32_thread.h" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\win32_module.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\win32_time.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\win32_thread.c" />
-    <ClInclude Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\win32_platform.h" />
-    <ClInclude Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\win32_joystick.h" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\win32_init.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\win32_joystick.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\win32_monitor.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\win32_window.c" />
-    <ClCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\wgl_context.c" />
-    <ResourceCompile Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\src\glfw.rc" />
+    <ClInclude Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include\GLFW\glfw3.h" />
+    <ClInclude Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\include\GLFW\glfw3native.h" />
+    <ClInclude Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\internal.h" />
+    <ClInclude Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\platform.h" />
+    <ClInclude Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\mappings.h" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\context.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\init.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\input.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\monitor.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\platform.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\vulkan.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\window.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\egl_context.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\osmesa_context.c" />
+    <ClInclude Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\null_platform.h" />
+    <ClInclude Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\null_joystick.h" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\null_init.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\null_monitor.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\null_window.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\null_joystick.c" />
+    <ClInclude Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\win32_time.h" />
+    <ClInclude Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\win32_thread.h" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\win32_module.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\win32_time.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\win32_thread.c" />
+    <ClInclude Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\win32_platform.h" />
+    <ClInclude Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\win32_joystick.h" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\win32_init.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\win32_joystick.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\win32_monitor.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\win32_window.c" />
+    <ClCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\wgl_context.c" />
+    <ResourceCompile Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\src\glfw.rc" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Libs\glfw\ZERO_CHECK.vcxproj">
-      <Project>{61423E44-CBE0-39BF-9AC5-B8EE806653D0}</Project>
+    <ProjectReference Include="C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Libs\glfw\ZERO_CHECK.vcxproj">
+      <Project>{8B107B9D-6B78-382C-88BE-947CCD4698BA}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

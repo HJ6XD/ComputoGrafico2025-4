@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/install_manifest.txt\"")
+if (NOT EXISTS "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/install_manifest.txt" files)
+file(READ "C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

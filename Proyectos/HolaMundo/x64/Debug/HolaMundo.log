@@ -1,3 +1,4 @@
 ﻿  HolaMundo.cpp
-C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Proyectos\HolaMundo\HolaMundo.cpp(3,6): warning C4326: el tipo de valor devuelto de 'main' debe ser 'int' en lugar de 'void'
-  HolaMundo.vcxproj -> C:\Users\Estudiante\Desktop\Carpeta de Diego\ComputoGrafico2025-4\Proyectos\x64\Debug\HolaMundo.exe
+C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Proyectos\HolaMundo\HolaMundo.cpp(3,6): warning C4326: el tipo de valor devuelto de 'main' debe ser 'int' en lugar de 'void'
+  LINK : no se encontró C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Proyectos\x64\Debug\HolaMundo.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
+  HolaMundo.vcxproj -> C:\Users\Estudiante\Desktop\ComputoGrafico2025-4\Proyectos\x64\Debug\HolaMundo.exe

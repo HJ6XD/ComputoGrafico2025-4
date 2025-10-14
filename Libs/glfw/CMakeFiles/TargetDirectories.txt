@@ -1,4 +1,4 @@
-C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/ALL_BUILD.dir
-C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/CMakeFiles/glfw.dir
-C:/Users/Estudiante/Desktop/Carpeta de Diego/ComputoGrafico2025-4/Libs/glfw/src/CMakeFiles/update_mappings.dir
+C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/ALL_BUILD.dir
+C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/CMakeFiles/glfw.dir
+C:/Users/Estudiante/Desktop/ComputoGrafico2025-4/Libs/glfw/src/CMakeFiles/update_mappings.dir
