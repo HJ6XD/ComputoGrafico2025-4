@@ -8,6 +8,9 @@ Application app;
 void myCallBack(GLFWwindow* _window, int key, int scancode, int action, int code) {
     app.KeyCallBack(key, scancode, action, code);
 }
+void mouseCallBack(GLFWwindow* window, double xpos, double ypos) {
+    app.CursorPosCallBack(window, xpos, ypos);
+}
 int main(void)
 {
     /* Initialize the library */
@@ -26,12 +29,12 @@ int main(void)
     app.SetUp();
 
     glfwSetKeyCallback(app.window, myCallBack);
-
+    glfwSetCursorPosCallback(app.window, mouseCallBack);
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(app.window))
     {
         /* Render here */
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         glfwPollEvents();
         app.Update();

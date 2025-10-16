@@ -6,10 +6,11 @@ out vec4 vertexColor;
 uniform float time;
 uniform mat4 camera;
 uniform mat4 proyection;
+uniform mat4 model;
 
 void main(){
 	vertexColor = vColor;
-	vec4 newPosition = proyection * camera *  vPosition;
+	vec4 newPosition = proyection * camera * model * vPosition ;
 
 	gl_Position = newPosition; // Equivale a hacer return gl_Position
 }

@@ -21,14 +21,18 @@ private:
 	std::string leerArchivo(const std::string& nombreArchivo);
 	glm::mat4 camera;
 	glm::mat4 proyection;
+	glm::mat4 model;
 	glm::vec3 eye{ 0.0f, 0.0f,-2.0f };
 	glm::vec3 center{ 0.1f, 0.1f,0.5f };
 public:
 
 	float time{ 0.0f };
 	float horizontalSpeed = 0;
+	float xRot, yRot;
+	double lastXMouse, lastYMouse;
 	bool moveingRight = false, moveingLeft = false;
 	void KeyCallBack(int key, int scancode, int action, int code);
+	void CursorPosCallBack(GLFWwindow* window, double xpos, double ypos);
 	GLFWwindow* window;
 	void SetUp();
 	void Update();
