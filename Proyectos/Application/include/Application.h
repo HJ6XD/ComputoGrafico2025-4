@@ -30,6 +30,7 @@ public:
 	float horizontalSpeed = 0;
 	float xRot, yRot;
 	double lastXMouse, lastYMouse;
+	const double sensitivity = 0.2;
 	bool moveingRight = false, moveingLeft = false;
 	void KeyCallBack(int key, int scancode, int action, int code);
 	void CursorPosCallBack(GLFWwindow* window, double xpos, double ypos);

@@ -261,8 +261,8 @@ void Application::Update()
 	
 
 
-	if (moveingLeft) horizontalSpeed -= 0.0002;
-	if (moveingRight) horizontalSpeed += 0.0002;
+	if (moveingLeft) xRot -= 0.02;
+	if (moveingRight) xRot += 0.02;
 	time += 1;
 	eye = glm::vec3(2.0f , 2.0f , 2.0f);
 	center = glm::vec3(0.0f, 0.0f, 0.0f);
@@ -294,9 +294,11 @@ void Application::KeyCallBack(int key, int scancode, int action, int code) {
 }
 void Application::CursorPosCallBack(GLFWwindow* window, double xpos, double ypos)
 {
-	xRot = lastXMouse - xpos;
-	yRot = lastYMouse - ypos;
+	double deltax = lastXMouse - xpos;
+	double deltay = lastYMouse - ypos;
 	lastXMouse = xpos; lastYMouse = ypos;
+	xRot += deltax * sensitivity;
+	yRot += deltay * sensitivity;
 }
 void Application::Draw()
 {
