@@ -258,11 +258,9 @@ void Application::SetUp()
 
 void Application::Update()
 {
-	
 
-
-	if (moveingLeft) xRot -= 0.02;
-	if (moveingRight) xRot += 0.02;
+	if (moveingLeft) horizontalSpeed -= 0.002;
+	if (moveingRight) horizontalSpeed += 0.002;
 	time += 1;
 	eye = glm::vec3(2.0f , 2.0f , 2.0f);
 	center = glm::vec3(0.0f, 0.0f, 0.0f);
