@@ -28,12 +28,13 @@ public:
 
 	float time{ 0.0f };
 	float horizontalSpeed = 0;
-	float xRot, yRot;
+	float xRot, yRot, zRot;
 	double lastXMouse, lastYMouse;
 	const double sensitivity = 0.2;
 	bool moveingRight = false, moveingLeft = false;
 	void KeyCallBack(int key, int scancode, int action, int code);
-	void CursorPosCallBack(GLFWwindow* window, double xpos, double ypos);
+	void CursorPosCallBack(double xpos, double ypos);
+	void ScrollCallBack(double xoffset, double yoffset);
 	GLFWwindow* window;
 	void SetUp();
 	void Update();

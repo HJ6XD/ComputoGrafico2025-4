@@ -9,7 +9,10 @@ void myCallBack(GLFWwindow* _window, int key, int scancode, int action, int code
     app.KeyCallBack(key, scancode, action, code);
 }
 void mouseCallBack(GLFWwindow* window, double xpos, double ypos) {
-    app.CursorPosCallBack(window, xpos, ypos);
+    app.CursorPosCallBack(xpos, ypos);
+}
+void scrollCallBack(GLFWwindow* window, double xoffset, double yoffset) {
+    app.ScrollCallBack(xoffset, yoffset);
 }
 int main(void)
 {
@@ -30,6 +33,7 @@ int main(void)
 
     glfwSetKeyCallback(app.window, myCallBack);
     glfwSetCursorPosCallback(app.window, mouseCallBack);
+    glfwSetScrollCallback(app.window, scrollCallBack);
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(app.window))
     {

@@ -268,9 +268,10 @@ void Application::Update()
 	
 	glm::mat4 scale = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f,1.0f,1.0f));
 	glm::mat4 translate = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f,0.0f,0.0f));
+	glm::mat4 rotateX = glm::rotate(glm::mat4(1.0f), glm::radians(xRot), glm::vec3(1.0f,0.0f,0.0f) );
 	glm::mat4 rotateY = glm::rotate(glm::mat4(1.0f), glm::radians(yRot), glm::vec3(0.0f,1.0f,0.0f) );
-	glm::mat4 rotateZ = glm::rotate(glm::mat4(1.0f), glm::radians(xRot), glm::vec3(0.0f,0.0f,1.0f) );
-	model = rotateZ* rotateY * translate * scale;
+	glm::mat4 rotateZ = glm::rotate(glm::mat4(1.0f), glm::radians(zRot), glm::vec3(0.0f,0.0f,1.0f) );
+	model = rotateZ* rotateY * rotateX * translate * scale;
 }
 void Application::KeyCallBack(int key, int scancode, int action, int code) {
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
@@ -290,7 +291,11 @@ void Application::KeyCallBack(int key, int scancode, int action, int code) {
 		moveingLeft = false;
 	}
 }
-void Application::CursorPosCallBack(GLFWwindow* window, double xpos, double ypos)
+void Application::ScrollCallBack(double xoffset, double yoffset)
+{
+	zRot += yoffset / (sensitivity * 2.0f);
+}
+void Application::CursorPosCallBack(double xpos, double ypos)
 {
 	double deltax = lastXMouse - xpos;
 	double deltay = lastYMouse - ypos;
