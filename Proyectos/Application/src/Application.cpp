@@ -283,11 +283,13 @@ void Application::KeyCallBack(int key, int scancode, int action, int code) {
 	}
 	if (key == GLFW_KEY_C) {
 		curGeometry = "cubo";
-		drawingCube = true;
+		primitiveMode = GL_TRIANGLES;
+		nosecomosellame = 36;
 	}
 	if (key == GLFW_KEY_T) {
 		curGeometry = "triangle";
-		drawingCube = false;
+		primitiveMode = GL_TRIANGLE_STRIP;
+		nosecomosellame = 4;
 	}
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
 		glfwSetWindowShouldClose(window, true);
@@ -320,7 +322,6 @@ void Application::CursorPosCallBack(double xpos, double ypos)
 }
 void Application::Draw()
 {
-
 	//Seleccionar programa (shaders)
 	glUseProgram(ids[curProgram]);
 
@@ -334,10 +335,5 @@ void Application::Draw()
 
 	glBindVertexArray(ids[curGeometry]);
 
-	if(drawingCube) {
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-	}
-	else if(!drawingCube) {
-		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-	}
+	glDrawArrays(primitiveMode, 0, nosecomosellame);
 }

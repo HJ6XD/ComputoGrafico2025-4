@@ -27,12 +27,13 @@ private:
 public:
 
 	float time{ 0.0f };
-	float horizontalSpeed = 0;
+	float horizontalSpeed{ 0 };
 	float xRot{ 0 }, yRot{ 0 }, zRot{ 0 };
 	double lastXMouse, lastYMouse;
-	const double sensitivity = 0.2;
-	bool moveingRight = false, moveingLeft = false;
-	bool drawingCube{ true };
+	const double sensitivity{ 0.2f };
+	bool moveingRight{ false }, moveingLeft{ false };
+	GLenum primitiveMode{ GL_TRIANGLES };
+	GLsizei nosecomosellame{ 36 };
 	std::string curProgram{ "program2" };
 	std::string curGeometry{ "cubo" };
 
