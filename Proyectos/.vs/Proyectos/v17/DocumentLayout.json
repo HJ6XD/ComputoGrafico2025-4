@@ -1,22 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\",
+  "WorkspaceRootPath": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|solutionrelative:Application\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|solutionrelative:Application\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\FragmentShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|solutionrelative:Application\\Shaders\\FragmentShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\include\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\VertexShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|solutionrelative:Application\\Shaders\\VertexShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\include\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|solutionrelative:Application\\include\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\VertexCamera.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\VertexCamera.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|solutionrelative:Application\\Shaders\\VertexCamera.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\FragmentCamera.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|solutionrelative:Application\\Shaders\\FragmentCamera.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|solutionrelative:Application\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,73 +37,100 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 234,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 202,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Application.cpp",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\Application.cpp",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\Application.cpp",
               "RelativeDocumentMoniker": "Application\\src\\Application.cpp",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\Application.cpp",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\Application.cpp",
               "RelativeToolTip": "Application\\src\\Application.cpp",
-              "ViewState": "AgIAAPoAAAAAAAAAAAAIwAgBAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAcwBUBAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-06T23:27:13.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\main.cpp",
               "RelativeDocumentMoniker": "Application\\src\\main.cpp",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\main.cpp",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\main.cpp",
               "RelativeToolTip": "Application\\src\\main.cpp",
               "ViewState": "AgIAAAQAAAAAAAAAAAAwwCMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-06T23:30:46.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-06T23:30:46.023Z"
             }
           ]
         },
         {
-          "DockedWidth": 146,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 178,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Application.h",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\include\\Application.h",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\include\\Application.h",
               "RelativeDocumentMoniker": "Application\\include\\Application.h",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\include\\Application.h",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\include\\Application.h",
               "RelativeToolTip": "Application\\include\\Application.h",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAowCQAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-06T23:29:47.317Z",
+              "WhenOpened": "2025-10-06T23:29:47.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FragmentShader.glsl",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\FragmentShader.glsl",
+              "RelativeDocumentMoniker": "Application\\Shaders\\FragmentShader.glsl",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\FragmentShader.glsl",
+              "RelativeToolTip": "Application\\Shaders\\FragmentShader.glsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-21T00:43:00.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "VertexShader.glsl",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\VertexShader.glsl",
+              "RelativeDocumentMoniker": "Application\\Shaders\\VertexShader.glsl",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\VertexShader.glsl",
+              "RelativeToolTip": "Application\\Shaders\\VertexShader.glsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-21T00:43:04.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "VertexCamera.glsl",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\VertexCamera.glsl",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\VertexCamera.glsl",
               "RelativeDocumentMoniker": "Application\\Shaders\\VertexCamera.glsl",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\VertexCamera.glsl",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\VertexCamera.glsl",
               "RelativeToolTip": "Application\\Shaders\\VertexCamera.glsl",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-10-14T20:12:21.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FragmentCamera.glsl",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\FragmentCamera.glsl",
+              "RelativeDocumentMoniker": "Application\\Shaders\\FragmentCamera.glsl",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\Shaders\\FragmentCamera.glsl",
+              "RelativeToolTip": "Application\\Shaders\\FragmentCamera.glsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-20T23:57:19.507Z"
             }
           ]
         }

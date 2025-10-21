@@ -28,10 +28,14 @@ public:
 
 	float time{ 0.0f };
 	float horizontalSpeed = 0;
-	float xRot, yRot, zRot;
+	float xRot{ 0 }, yRot{ 0 }, zRot{ 0 };
 	double lastXMouse, lastYMouse;
 	const double sensitivity = 0.2;
 	bool moveingRight = false, moveingLeft = false;
+	bool drawingCube{ true };
+	std::string curProgram{ "program2" };
+	std::string curGeometry{ "cubo" };
+
 	void KeyCallBack(int key, int scancode, int action, int code);
 	void CursorPosCallBack(double xpos, double ypos);
 	void ScrollCallBack(double xoffset, double yoffset);

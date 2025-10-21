@@ -247,9 +247,10 @@ void Application::SetUp()
 {
 	lastXMouse = 0; lastYMouse = 0;
 
-	//ProgramSetUp1();
+	ProgramSetUp1();
 	ProgramSetUp2();
 	CubeSetUp();
+	GeometrySetUp();
 
 	glEnable(GL_DEPTH_TEST);
 
@@ -261,19 +262,33 @@ void Application::Update()
 
 	if (moveingLeft) horizontalSpeed -= 0.002;
 	if (moveingRight) horizontalSpeed += 0.002;
-	time += 1;
-	eye = glm::vec3(2.0f , 2.0f , 2.0f);
-	center = glm::vec3(0.0f, 0.0f, 0.0f);
-	camera = glm::lookAt(eye, center, glm::vec3(0.0f, 0.0f, 1.0f));
+	time += 5;
+	eye = glm::vec3(0.0f , 0.0f , 5.0f + zRot);
+	center = glm::vec3(0.01f, 0.01f, 0.01f);
+	camera = glm::lookAt(eye, center, glm::vec3(0.0f, 1.0f, 0.0f));
 	
 	glm::mat4 scale = glm::scale(glm::mat4(1.0f), glm::vec3(1.0f,1.0f,1.0f));
 	glm::mat4 translate = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f,0.0f,0.0f));
-	glm::mat4 rotateX = glm::rotate(glm::mat4(1.0f), glm::radians(xRot), glm::vec3(1.0f,0.0f,0.0f) );
-	glm::mat4 rotateY = glm::rotate(glm::mat4(1.0f), glm::radians(yRot), glm::vec3(0.0f,1.0f,0.0f) );
-	glm::mat4 rotateZ = glm::rotate(glm::mat4(1.0f), glm::radians(zRot), glm::vec3(0.0f,0.0f,1.0f) );
-	model = rotateZ* rotateY * rotateX * translate * scale;
+	glm::mat4 rotateX = glm::rotate(glm::mat4(1.0f), glm::radians(-yRot), glm::vec3(0.0f,0.0f,1.0f) );
+	glm::mat4 rotateY = glm::rotate(glm::mat4(1.0f), glm::radians(-xRot), glm::vec3(0.0f,1.0f,0.0f) );
+	//glm::mat4 rotateZ = glm::rotate(glm::mat4(1.0f), glm::radians(zRot), glm::vec3(0.0f,0.0f,1.0f) );
+	model = rotateY* rotateX * translate * scale;
 }
 void Application::KeyCallBack(int key, int scancode, int action, int code) {
+	if (key == GLFW_KEY_2) {
+		curProgram = "program2";
+	}
+	if (key == GLFW_KEY_1) {
+		curProgram = "program1";
+	}
+	if (key == GLFW_KEY_C) {
+		curGeometry = "cubo";
+		drawingCube = true;
+	}
+	if (key == GLFW_KEY_T) {
+		curGeometry = "triangle";
+		drawingCube = false;
+	}
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
 		glfwSetWindowShouldClose(window, true);
 	}
@@ -293,7 +308,7 @@ void Application::KeyCallBack(int key, int scancode, int action, int code) {
 }
 void Application::ScrollCallBack(double xoffset, double yoffset)
 {
-	zRot += yoffset / (sensitivity * 2.0f);
+	zRot += yoffset * sensitivity;
 }
 void Application::CursorPosCallBack(double xpos, double ypos)
 {
@@ -305,17 +320,24 @@ void Application::CursorPosCallBack(double xpos, double ypos)
 }
 void Application::Draw()
 {
+
 	//Seleccionar programa (shaders)
-	glUseProgram(ids["program2"]);
+	glUseProgram(ids[curProgram]);
 
 	//Pasar el resto de los parámetros para el programa
 	glUniform1f(ids["time2"], time);
-	glUniformMatrix4fv(ids["model"],1, GL_FALSE, &model[0][0]);
-	glUniformMatrix4fv(ids["camera"],1, GL_FALSE, &camera[0][0]);
-	glUniformMatrix4fv(ids["proyection"],1, GL_FALSE, &proyection[0][0]);
+	glUniform1f(ids["time"], time);
+	glUniformMatrix4fv(ids["model"], 1, GL_FALSE, &model[0][0]);
+	glUniformMatrix4fv(ids["camera"], 1, GL_FALSE, &camera[0][0]);
+	glUniformMatrix4fv(ids["proyection"], 1, GL_FALSE, &proyection[0][0]);
+	glUniform1f(ids["horizontalSpeed"], horizontalSpeed);
 
-	//Seleccionar la geometria 
-	glBindVertexArray(ids["cubo"]);
+	glBindVertexArray(ids[curGeometry]);
 
-	glDrawArrays(GL_TRIANGLES, 0, 36);
+	if(drawingCube) {
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+	}
+	else if(!drawingCube) {
+		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+	}
 }

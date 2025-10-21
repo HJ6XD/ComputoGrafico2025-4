@@ -5,5 +5,12 @@ out vec4 outColor;
 uniform float time;
 
 void main(){
-	outColor = vertexColor;
+	vec4 newColor = vertexColor;
+	newColor.x = 1;
+	newColor.y = 1;
+	newColor.z = 0;
+	/*newColor.x = sin(time);
+	newColor.y = sin(time);
+	newColor.z = sin(time);*/
+	outColor = newColor;
 }
