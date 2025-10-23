@@ -33,7 +33,7 @@ public:
 	const double sensitivity{ 0.2f };
 	bool moveingRight{ false }, moveingLeft{ false };
 	GLenum primitiveMode{ GL_TRIANGLES };
-	GLsizei nosecomosellame{ 36 };
+	GLsizei vertexToDraw{ 36 };
 	std::string curProgram{ "program2" };
 	std::string curGeometry{ "cubo" };
 
@@ -44,5 +44,4 @@ public:
 	void SetUp();
 	void Update();
 	void Draw();
-
 };

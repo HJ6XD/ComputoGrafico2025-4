@@ -19,7 +19,6 @@ int main(void)
     /* Initialize the library */
     if (!glfwInit())
         return -1;
-
     
     app.window = glfwCreateWindow(1024, 768, "Hello Application", NULL, NULL);
     glfwMakeContextCurrent(app.window);

@@ -52,9 +52,8 @@ void Application::CubeSetUp()
 		
 		//Triangulo 2
 		-1.0f, -1.0f,  1.0f, 1.0f, //Vertice 1
-		-1.0f,  1.0f,  1.0f, 1.0f, //Vertice 24
-		-1.0f, -1.0f, -1.0f, 1.0f, //Vertice 37302.
-
+		-1.0f,  1.0f,  1.0f, 1.0f, //Vertice 2
+		-1.0f, -1.0f, -1.0f, 1.0f, //Vertice 3
 		
 		//Cara Derecha
 		//Triangulo 1
@@ -211,9 +210,10 @@ void Application::ProgramSetUp1()
 	std::string fragmentShader = leerArchivo("Shaders/FragmentShader.glsl");
 	std::string vertexShader = leerArchivo("Shaders/VertexShader.glsl");
 	ids["program1"] = shaderfuncs.InitializeProgram(vertexShader, fragmentShader);
-	ids["time"] = glGetUniformLocation(ids["program"], "time");
-	ids["horizontalSpeed"] = glGetUniformLocation(ids["program"], "horizontalSpeed");
+	ids["time"] = glGetUniformLocation(ids["program1"], "time");
+	ids["horizontalSpeed"] = glGetUniformLocation(ids["program1"], "horizontalSpeed");
 }
+
 void Application::ProgramSetUp2()
 {
 	std::string fragmentCamera = leerArchivo("Shaders/FragmentCamera.glsl");
@@ -242,11 +242,8 @@ std::string Application::leerArchivo(const std::string& ruta) {
 	return contenido;
 }
 
-
 void Application::SetUp()
 {
-	lastXMouse = 0; lastYMouse = 0;
-
 	ProgramSetUp1();
 	ProgramSetUp2();
 	CubeSetUp();
@@ -254,15 +251,16 @@ void Application::SetUp()
 
 	glEnable(GL_DEPTH_TEST);
 
+	lastXMouse = 0; lastYMouse = 0;
 	proyection = glm::perspective(45.0f, 1024.0f/ 768.0f, 0.1f, 100.0f);
 }
 
 void Application::Update()
 {
 
-	if (moveingLeft) horizontalSpeed -= 0.002;
-	if (moveingRight) horizontalSpeed += 0.002;
-	time += 5;
+	if (moveingLeft) horizontalSpeed -= 0.02;
+	if (moveingRight) horizontalSpeed += 0.02;
+	time += 0.01;
 	eye = glm::vec3(0.0f , 0.0f , 5.0f + zRot);
 	center = glm::vec3(0.01f, 0.01f, 0.01f);
 	camera = glm::lookAt(eye, center, glm::vec3(0.0f, 1.0f, 0.0f));
@@ -274,6 +272,7 @@ void Application::Update()
 	//glm::mat4 rotateZ = glm::rotate(glm::mat4(1.0f), glm::radians(zRot), glm::vec3(0.0f,0.0f,1.0f) );
 	model = rotateY* rotateX * translate * scale;
 }
+
 void Application::KeyCallBack(int key, int scancode, int action, int code) {
 	if (key == GLFW_KEY_2) {
 		curProgram = "program2";
@@ -284,12 +283,12 @@ void Application::KeyCallBack(int key, int scancode, int action, int code) {
 	if (key == GLFW_KEY_C) {
 		curGeometry = "cubo";
 		primitiveMode = GL_TRIANGLES;
-		nosecomosellame = 36;
+		vertexToDraw = 36;
 	}
 	if (key == GLFW_KEY_T) {
 		curGeometry = "triangle";
 		primitiveMode = GL_TRIANGLE_STRIP;
-		nosecomosellame = 4;
+		vertexToDraw = 4;
 	}
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
 		glfwSetWindowShouldClose(window, true);
@@ -308,10 +307,12 @@ void Application::KeyCallBack(int key, int scancode, int action, int code) {
 		moveingLeft = false;
 	}
 }
+
 void Application::ScrollCallBack(double xoffset, double yoffset)
 {
 	zRot += yoffset * sensitivity;
 }
+
 void Application::CursorPosCallBack(double xpos, double ypos)
 {
 	double deltax = lastXMouse - xpos;
@@ -320,6 +321,7 @@ void Application::CursorPosCallBack(double xpos, double ypos)
 	xRot += deltax * sensitivity;
 	yRot += deltay * sensitivity;
 }
+
 void Application::Draw()
 {
 	//Seleccionar programa (shaders)
@@ -335,5 +337,5 @@ void Application::Draw()
 
 	glBindVertexArray(ids[curGeometry]);
 
-	glDrawArrays(primitiveMode, 0, nosecomosellame);
+	glDrawArrays(primitiveMode, 0, vertexToDraw);
 }
