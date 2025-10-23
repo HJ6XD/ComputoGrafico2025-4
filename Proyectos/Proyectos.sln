@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HolaMundo", "HolaMundo\Hola
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Application", "Application\Application.vcxproj", "{79E11F32-743F-4840-A2FE-686303A4E3C6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectX_12", "DirectX_12\DirectX_2.vcxproj", "{FCFFEC48-1A6E-460A-96EF-B341FFA57993}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{79E11F32-743F-4840-A2FE-686303A4E3C6}.Release|x64.Build.0 = Release|x64
 		{79E11F32-743F-4840-A2FE-686303A4E3C6}.Release|x86.ActiveCfg = Release|Win32
 		{79E11F32-743F-4840-A2FE-686303A4E3C6}.Release|x86.Build.0 = Release|Win32
+		{FCFFEC48-1A6E-460A-96EF-B341FFA57993}.Debug|x64.ActiveCfg = Debug|x64
+		{FCFFEC48-1A6E-460A-96EF-B341FFA57993}.Debug|x64.Build.0 = Debug|x64
+		{FCFFEC48-1A6E-460A-96EF-B341FFA57993}.Debug|x86.ActiveCfg = Debug|Win32
+		{FCFFEC48-1A6E-460A-96EF-B341FFA57993}.Debug|x86.Build.0 = Debug|Win32
+		{FCFFEC48-1A6E-460A-96EF-B341FFA57993}.Release|x64.ActiveCfg = Release|x64
+		{FCFFEC48-1A6E-460A-96EF-B341FFA57993}.Release|x64.Build.0 = Release|x64
+		{FCFFEC48-1A6E-460A-96EF-B341FFA57993}.Release|x86.ActiveCfg = Release|Win32
+		{FCFFEC48-1A6E-460A-96EF-B341FFA57993}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
