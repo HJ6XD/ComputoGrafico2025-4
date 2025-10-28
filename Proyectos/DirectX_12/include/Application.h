@@ -39,8 +39,9 @@ private:
 	void setupRenderTargetView();
 	void setupCommandAllocator();
 	void setupCommandList();
+	void setupDepthBuffer();
 	void swapBuffers();
-
+	
 	std::string readFile(const std::string& filename);
 
 	// --- Configuración y Constantes ---
@@ -63,8 +64,10 @@ private:
 	UINT g_frameIndex;
 	UINT g_rtvDescriptorSize;
 	
-
-
+	//variables del Depth buffer
+	Microsoft::WRL::ComPtr<ID3D12DescriptorHeap> g_dsvHeap;
+	Microsoft::WRL::ComPtr<ID3D12Resource> g_depthStencil;
+	UINT g_dsvDescriptorSize;
 public:
 	const int Width{ 1280 };
 	const int Height{ 1024 };

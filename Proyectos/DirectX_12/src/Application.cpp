@@ -158,20 +158,88 @@ void Application::setupCommandList()
 	g_commandList->Close(); // La lista debe estar cerrada para el primer reset.	
 }
 
+void Application::setupDepthBuffer()
+{
+	// 1) Descriptor heap para DSV
+	D3D12_DESCRIPTOR_HEAP_DESC dsvHeapDesc = {};
+	dsvHeapDesc.NumDescriptors = 1;
+	dsvHeapDesc.Flags = D3D12_DESCRIPTOR_HEAP_FLAG_NONE;
+	dsvHeapDesc.Type = D3D12_DESCRIPTOR_HEAP_TYPE_DSV;
+	ThrowIfFailed(g_device->CreateDescriptorHeap(&dsvHeapDesc, IID_PPV_ARGS(&g_dsvHeap)));
+
+	g_dsvDescriptorSize = g_device->GetDescriptorHandleIncrementSize(D3D12_DESCRIPTOR_HEAP_TYPE_DSV);
+
+	// 2) Descripción del recurso depth (typeless para permitir DSV con formato D32)
+	D3D12_RESOURCE_DESC depthDesc = {};
+	depthDesc.Dimension = D3D12_RESOURCE_DIMENSION_TEXTURE2D;
+	depthDesc.Alignment = 0;
+	depthDesc.Width = Width;
+	depthDesc.Height = Height;
+	depthDesc.DepthOrArraySize = 1;
+	depthDesc.MipLevels = 1;
+	depthDesc.Format = DXGI_FORMAT_R32_TYPELESS; // typeless para D32_FLOAT view
+	depthDesc.SampleDesc.Count = 1;
+	depthDesc.SampleDesc.Quality = 0;
+	depthDesc.Layout = D3D12_TEXTURE_LAYOUT_UNKNOWN;
+	depthDesc.Flags = D3D12_RESOURCE_FLAG_ALLOW_DEPTH_STENCIL;
+
+	// 3) Clear value optimizado para depth
+	D3D12_CLEAR_VALUE clearValue = {};
+	clearValue.Format = DXGI_FORMAT_D32_FLOAT;
+	clearValue.DepthStencil.Depth = 1.0f;
+	clearValue.DepthStencil.Stencil = 0;
+
+	// 4) Heap properties
+	D3D12_HEAP_PROPERTIES heapProps = {};
+	heapProps.Type = D3D12_HEAP_TYPE_DEFAULT;
+	heapProps.CPUPageProperty = D3D12_CPU_PAGE_PROPERTY_UNKNOWN;
+	heapProps.MemoryPoolPreference = D3D12_MEMORY_POOL_UNKNOWN;
+	heapProps.CreationNodeMask = 1;
+	heapProps.VisibleNodeMask = 1;
+
+	// 5) Crear recurso (inicialmente en COMMON)
+	ThrowIfFailed(g_device->CreateCommittedResource(
+		&heapProps,
+		D3D12_HEAP_FLAG_NONE,
+		&depthDesc,
+		D3D12_RESOURCE_STATE_COMMON, // inicial
+		&clearValue,
+		IID_PPV_ARGS(&g_depthStencil)
+	), "Error creando Depth Stencil Resource");
+
+	// 6) Crear Depth Stencil View (DSV) con formato D32_FLOAT
+	D3D12_DEPTH_STENCIL_VIEW_DESC dsvDesc = {};
+	dsvDesc.Format = DXGI_FORMAT_D32_FLOAT;
+	dsvDesc.ViewDimension = D3D12_DSV_DIMENSION_TEXTURE2D;
+	dsvDesc.Flags = D3D12_DSV_FLAG_NONE;
+
+	g_device->CreateDepthStencilView(g_depthStencil.Get(), &dsvDesc, g_dsvHeap->GetCPUDescriptorHandleForHeapStart());
+}
+
 void Application::clearColorBuffer(const float& r, const float& g, const float& b, const float& a)
 {
-	// Obtener el handle al RTV actual
+	// RTV actual
 	D3D12_CPU_DESCRIPTOR_HANDLE rtvHandle = g_rtvHeap->GetCPUDescriptorHandleForHeapStart();
+	rtvHandle.ptr += (SIZE_T)g_frameIndex * g_rtvDescriptorSize;
 
-	// Establecer RTV (Aunque solo limpiemos, es buena práctica)
-	rtvHandle.ptr += (SIZE_T)g_frameIndex * g_rtvDescriptorSize;	
-	g_commandList->OMSetRenderTargets(1, &rtvHandle, FALSE, nullptr);
+	// DSV
+	if (!g_dsvHeap) {
+		throw std::runtime_error("g_dsvHeap es nullptr — ¿olvidaste llamar setupDepthBuffer()?");
+	}
 
-	// 5. ¡El Clear! (ID3D12GraphicsCommandList::ClearRenderTargetView)
+	D3D12_CPU_DESCRIPTOR_HANDLE dsvHandle = g_dsvHeap->GetCPUDescriptorHandleForHeapStart();
+
+	// Bind RT + DSV al OM
+	g_commandList->OMSetRenderTargets(1, &rtvHandle, FALSE, &dsvHandle);
+
+	// Clear RTV
 	const float clearColor[] = { r, g, b, a };
 	g_commandList->ClearRenderTargetView(rtvHandle, clearColor, 0, nullptr);
-	
+
+	// Clear DSV (solo profundidad)
+	g_commandList->ClearDepthStencilView(dsvHandle, D3D12_CLEAR_FLAG_DEPTH, 1.0f, 0, 0, nullptr);
 }
+
 
 void Application::setup()
 {
@@ -185,6 +253,7 @@ void Application::setup()
 	setupSwapChain();
 	setupDescriptorHeap();
 	setupRenderTargetView();
+	setupDepthBuffer();
 	setupCommandAllocator();
 	setupCommandList();
 	setupShaders();
@@ -215,7 +284,16 @@ void Application::draw()
 	ThrowIfFailed(g_commandList->Reset(g_commandAllocator.Get(), nullptr), "Error borrando el Command List");
 	
 	// Transición del Back Buffer: Present -> Render Target
-	swapBuffers();
+	{
+		D3D12_RESOURCE_BARRIER barrier = {};
+		barrier.Type = D3D12_RESOURCE_BARRIER_TYPE_TRANSITION;
+		barrier.Flags = D3D12_RESOURCE_BARRIER_FLAG_NONE;
+		barrier.Transition.pResource = g_renderTargets[g_frameIndex].Get();
+		barrier.Transition.StateBefore = D3D12_RESOURCE_STATE_PRESENT;
+		barrier.Transition.StateAfter = D3D12_RESOURCE_STATE_RENDER_TARGET;
+		barrier.Transition.Subresource = D3D12_RESOURCE_BARRIER_ALL_SUBRESOURCES;
+		g_commandList->ResourceBarrier(1, &barrier);
+	}
 	
 	//Borrar el buffer
 	clearColorBuffer(1.0f, 0.8f, 0.0f, 1.0f);
@@ -223,7 +301,16 @@ void Application::draw()
 	//render !!
 	//Agrega aqui tus comandos
 	
-	swapBuffers();
+	{
+		D3D12_RESOURCE_BARRIER barrier = {};
+		barrier.Type = D3D12_RESOURCE_BARRIER_TYPE_TRANSITION;
+		barrier.Flags = D3D12_RESOURCE_BARRIER_FLAG_NONE;
+		barrier.Transition.pResource = g_renderTargets[g_frameIndex].Get();
+		barrier.Transition.StateBefore = D3D12_RESOURCE_STATE_RENDER_TARGET;
+		barrier.Transition.StateAfter = D3D12_RESOURCE_STATE_PRESENT;
+		barrier.Transition.Subresource = D3D12_RESOURCE_BARRIER_ALL_SUBRESOURCES;
+		g_commandList->ResourceBarrier(1, &barrier);
+	}
 	
 	// Cerrar y Ejecutar Command List
 	ThrowIfFailed(g_commandList->Close(), "Error al cerrar Command List");

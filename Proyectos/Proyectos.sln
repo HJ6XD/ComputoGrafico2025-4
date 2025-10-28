@@ -9,6 +9,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Application", "Application\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectX_12", "DirectX_12\DirectX_2.vcxproj", "{FCFFEC48-1A6E-460A-96EF-B341FFA57993}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectX12Triangle", "DirectX12Triangle\DirectX12Triangle.vcxproj", "{63C767C1-2F86-4E6D-BF09-5C684BA9A217}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectXApplication", "DirectXApplication\DirectXApplication.vcxproj", "{A19F1C2D-0033-4300-A399-3B986BFDC25C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +45,22 @@ Global
 		{FCFFEC48-1A6E-460A-96EF-B341FFA57993}.Release|x64.Build.0 = Release|x64
 		{FCFFEC48-1A6E-460A-96EF-B341FFA57993}.Release|x86.ActiveCfg = Release|Win32
 		{FCFFEC48-1A6E-460A-96EF-B341FFA57993}.Release|x86.Build.0 = Release|Win32
+		{63C767C1-2F86-4E6D-BF09-5C684BA9A217}.Debug|x64.ActiveCfg = Debug|x64
+		{63C767C1-2F86-4E6D-BF09-5C684BA9A217}.Debug|x64.Build.0 = Debug|x64
+		{63C767C1-2F86-4E6D-BF09-5C684BA9A217}.Debug|x86.ActiveCfg = Debug|Win32
+		{63C767C1-2F86-4E6D-BF09-5C684BA9A217}.Debug|x86.Build.0 = Debug|Win32
+		{63C767C1-2F86-4E6D-BF09-5C684BA9A217}.Release|x64.ActiveCfg = Release|x64
+		{63C767C1-2F86-4E6D-BF09-5C684BA9A217}.Release|x64.Build.0 = Release|x64
+		{63C767C1-2F86-4E6D-BF09-5C684BA9A217}.Release|x86.ActiveCfg = Release|Win32
+		{63C767C1-2F86-4E6D-BF09-5C684BA9A217}.Release|x86.Build.0 = Release|Win32
+		{A19F1C2D-0033-4300-A399-3B986BFDC25C}.Debug|x64.ActiveCfg = Debug|x64
+		{A19F1C2D-0033-4300-A399-3B986BFDC25C}.Debug|x64.Build.0 = Debug|x64
+		{A19F1C2D-0033-4300-A399-3B986BFDC25C}.Debug|x86.ActiveCfg = Debug|Win32
+		{A19F1C2D-0033-4300-A399-3B986BFDC25C}.Debug|x86.Build.0 = Debug|Win32
+		{A19F1C2D-0033-4300-A399-3B986BFDC25C}.Release|x64.ActiveCfg = Release|x64
+		{A19F1C2D-0033-4300-A399-3B986BFDC25C}.Release|x64.Build.0 = Release|x64
+		{A19F1C2D-0033-4300-A399-3B986BFDC25C}.Release|x86.ActiveCfg = Release|Win32
+		{A19F1C2D-0033-4300-A399-3B986BFDC25C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
