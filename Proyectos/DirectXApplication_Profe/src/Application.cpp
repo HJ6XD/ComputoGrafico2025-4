@@ -152,6 +152,34 @@ void Application::setupShaders()
 	pixel_shader = nullptr;
 }
 
+void Application::SetupConstantBuffer() {
+	D3D12_HEAP_PROPERTIES heapProps = {};
+	heapProps.Type = D3D12_HEAP_TYPE_UPLOAD;
+	heapProps.CPUPageProperty = D3D12_CPU_PAGE_PROPERTY_UNKNOWN;
+	heapProps.MemoryPoolPreference = D3D12_MEMORY_POOL_UNKNOWN;
+	heapProps.CreationNodeMask = 1;
+	heapProps.VisibleNodeMask = 1;
+
+	D3D12_RESOURCE_DESC resourceDesc = {};
+	resourceDesc.Dimension = D3D12_RESOURCE_DIMENSION_BUFFER;
+
+	resourceDesc.Width = sizeof(SceneConstants);
+	resourceDesc.Height = 1;
+	resourceDesc.DepthOrArraySize = 1;
+	resourceDesc.MipLevels = 1;
+	resourceDesc.SampleDesc.Count = 1;
+	resourceDesc.Layout = D3D12_TEXTURE_LAYOUT_ROW_MAJOR;
+
+	device->CreateCommittedResource(
+		&heapProps,
+		D3D12_HEAP_FLAG_NONE,
+		&resourceDesc,
+		D3D12_RESOURCE_STATE_GENERIC_READ,
+		nullptr,
+		IID_PPV_ARGS(&constantBuffer)
+	);
+}
+
 void Application::setupDevice()
 {
 	// Crear el Device (Buscando el adaptador de hardware)
@@ -223,7 +251,6 @@ void Application::setupRenderTargetView()
 	}
 }
 
-
 void Application::setupSignature()
 {
 	//Root signature is like have many object buffers and textures we want to use when drawing.
@@ -276,17 +303,18 @@ void Application::setupCommandList()
 
 void Application::update()
 {
-	eye = DirectX::XMVectorSet(0.0f,0.0f,-3.0f,0.0f);
-	center = DirectX::XMVectorSet(0.0f,0.0f,0.0f,0.0f);
-	up = DirectX::XMVectorSet(0.0f,1.0f,0.0f,0.0f);
-
-	DirectX::XMMatrixLookAtLH(eye, center, up);
-
-	projection = DirectX::XMMatrixPerspectiveFovLH(DirectX::XMConvertToRadians(60.0f), WINDOW_WIDTH / WINDOW_HEIGHT, 0.1f, 1000.0f);
-	DirectX::XMVECTOR rotationAxis = DirectX::XMVectorSet(1.0f, 0.0f, 0.0f, 1.0f);
-	model = DirectX::XMMatrixRotationAxis(rotationAxis, DirectX::XMConvertToRadians(triangle_angle));
-
 	++triangle_angle;
+
+	sceneConstants.eye = DirectX::XMVectorSet(0.0f,0.0f,-3.0f,0.0f);
+	sceneConstants.center = DirectX::XMVectorSet(0.0f,0.0f,0.0f,0.0f);
+	sceneConstants.up = DirectX::XMVectorSet(0.0f,1.0f,0.0f,0.0f);
+
+	sceneConstants.view = DirectX::XMMatrixLookAtLH(sceneConstants.eye, sceneConstants.center, sceneConstants.up);
+
+	sceneConstants.projection = DirectX::XMMatrixPerspectiveFovLH(DirectX::XMConvertToRadians(60.0f), WINDOW_WIDTH / WINDOW_HEIGHT, 0.1f, 1000.0f);
+	DirectX::XMVECTOR rotationAxis = DirectX::XMVectorSet(1.0f, 0.0f, 0.0f, 1.0f);
+	sceneConstants.model = DirectX::XMMatrixRotationAxis(rotationAxis, DirectX::XMConvertToRadians(triangle_angle));
+
 }
 
 void Application::draw()
@@ -325,6 +353,14 @@ void Application::draw()
 	commandList->SetGraphicsRootSignature(rootSignature.Get());
 	commandList->SetPipelineState(pipelineState.Get());
 
+	//Copiar al buffer mapeado 
+	void* mappedMemory;
+	ThrowIfFailed(constantBuffer->Map(0, nullptr, &mappedMemory), "fallo al copiar las constantes");
+
+	memcpy(mappedMemory, &sceneConstants, sizeof(SceneConstants));
+	commandList->SetGraphicsRootConstantBufferView(0, constantBuffer->GetGPUVirtualAddress());
+
+	constantBuffer->Unmap(0, nullptr);
 	//Pass parameters
 	commandList->SetGraphicsRoot32BitConstant(0, triangle_angle, 0);
 
@@ -367,4 +403,5 @@ void Application::setup()
 	setupRenderTargetView();
 	setupSignature();
 	setupShaders();
+	SetupConstantBuffer();
 }
