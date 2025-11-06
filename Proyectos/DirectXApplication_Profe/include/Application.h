@@ -36,9 +36,9 @@ typedef struct _SceneConstants {
 	DirectX::XMVECTOR center; //4 flotante = 16 bytes
 	DirectX::XMVECTOR up; //4 flotante = 16 bytes
 
-	//UINT triangle_angle = 0; //4 bytes
+	UINT triangle_angle = 0; //4 bytes
 
-	float padding;
+	float padding[3];
 } SceneConstants;
 
 class Application
@@ -85,14 +85,14 @@ private:
 
 	UINT frameIndex{ 0 };
 	UINT rtvIncrementSize;
-
+	void* mappedMemory;
 	SceneConstants sceneConstants;
 
 	unsigned int triangle_angle;
 
 public:
 	const int WINDOW_WIDTH = 1024;
-	const int WINDOW_HEIGHT = 1024;
+	const int WINDOW_HEIGHT = 768;
 	GLFWwindow* window;
 	HWND GetWindowNativeHandler() const;
 	void setup();

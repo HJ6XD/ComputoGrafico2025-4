@@ -178,6 +178,8 @@ void Application::SetupConstantBuffer() {
 		nullptr,
 		IID_PPV_ARGS(&constantBuffer)
 	);
+	ThrowIfFailed(constantBuffer->Map(0, nullptr, &mappedMemory), "valio en el mapeo de constant buffer");
+	constantBuffer->Map(0, nullptr, reinterpret_cast<void**>(&mappedMemory));
 }
 
 void Application::setupDevice()
@@ -256,11 +258,12 @@ void Application::setupSignature()
 	//Root signature is like have many object buffers and textures we want to use when drawing.
 	//For our rotating triangle, we only need a single constant that is going to be our angle
 	D3D12_ROOT_PARAMETER rootParameters[1] = {};
-	rootParameters[0].ParameterType = D3D12_ROOT_PARAMETER_TYPE_32BIT_CONSTANTS;
-	rootParameters[0].Constants.Num32BitValues = 1;
-	rootParameters[0].Constants.ShaderRegister = 0;
-	rootParameters[0].Constants.RegisterSpace = 0;
+	rootParameters[0].ParameterType = D3D12_ROOT_PARAMETER_TYPE_CBV;
+	rootParameters[0].Constants.Num32BitValues = 0;
 	rootParameters[0].ShaderVisibility = D3D12_SHADER_VISIBILITY_VERTEX;
+
+	/*rootParameters[0].Constants.ShaderRegister = 0;
+	rootParameters[0].Constants.RegisterSpace = 0;*/
 
 	rootSignature = nullptr;
 	D3D12_ROOT_SIGNATURE_DESC rootSignatureDesc = {};
@@ -305,14 +308,21 @@ void Application::update()
 {
 	++triangle_angle;
 
-	sceneConstants.eye = DirectX::XMVectorSet(0.0f,0.0f,-3.0f,0.0f);
-	sceneConstants.center = DirectX::XMVectorSet(0.0f,0.0f,0.0f,0.0f);
-	sceneConstants.up = DirectX::XMVectorSet(0.0f,1.0f,0.0f,0.0f);
+	sceneConstants.eye = DirectX::XMVectorSet(0.0f,0.0f,-3.0f,1.0f);
+	sceneConstants.center = DirectX::XMVectorSet(0.0f,0.0f,0.0f,1.0f);
+	sceneConstants.up = DirectX::XMVectorSet(0.0f,1.0f,0.0f,1.0f);
 
 	sceneConstants.view = DirectX::XMMatrixLookAtLH(sceneConstants.eye, sceneConstants.center, sceneConstants.up);
 
-	sceneConstants.projection = DirectX::XMMatrixPerspectiveFovLH(DirectX::XMConvertToRadians(60.0f), WINDOW_WIDTH / WINDOW_HEIGHT, 0.1f, 1000.0f);
-	DirectX::XMVECTOR rotationAxis = DirectX::XMVectorSet(1.0f, 0.0f, 0.0f, 1.0f);
+	float aspect = static_cast<float>(WINDOW_WIDTH) / static_cast<float>(WINDOW_HEIGHT);
+	/*sceneConstants.projection = DirectX::XMMatrixPerspectiveFovLH(
+		DirectX::XMConvertToRadians(60.0f), 
+		aspect, 
+		0.1f, 
+		1000.0f);*/
+	sceneConstants.projection = DirectX::XMMatrixIdentity();
+	DirectX::XMVECTOR rotationAxis = DirectX::XMVectorSet(0.0f, 0.0f, 1.0f, 1.0f);
+	//sceneConstants.model = DirectX::XMMatrixTranspose(DirectX::XMMatrixScaling(.5f, .5f, .5f));
 	sceneConstants.model = DirectX::XMMatrixRotationAxis(rotationAxis, DirectX::XMConvertToRadians(triangle_angle));
 
 }
@@ -353,17 +363,10 @@ void Application::draw()
 	commandList->SetGraphicsRootSignature(rootSignature.Get());
 	commandList->SetPipelineState(pipelineState.Get());
 
-	//Copiar al buffer mapeado 
-	void* mappedMemory;
-	ThrowIfFailed(constantBuffer->Map(0, nullptr, &mappedMemory), "fallo al copiar las constantes");
 
 	memcpy(mappedMemory, &sceneConstants, sizeof(SceneConstants));
 	commandList->SetGraphicsRootConstantBufferView(0, constantBuffer->GetGPUVirtualAddress());
-
-	constantBuffer->Unmap(0, nullptr);
-	//Pass parameters
-	commandList->SetGraphicsRoot32BitConstant(0, triangle_angle, 0);
-
+	
 	// Draw the triangle
 	commandList->DrawInstanced(3, 1, 0, 0);
 	
