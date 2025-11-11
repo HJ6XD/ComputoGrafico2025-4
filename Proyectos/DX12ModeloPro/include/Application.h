@@ -37,77 +37,7 @@ struct Model {
     std::vector<unsigned int> indicies;
 };
 
-Model load_model_from_obj(const std::string& path) {
-    std::ifstream file(path);  // Open the file
-
-    if (!file.is_open()) {
-        return {};
-    }
-
-    Model model;
-    std::vector<DirectX::XMFLOAT3> temp_positions;
-    std::vector<DirectX::XMFLOAT3> temp_normals;
-    std::map<std::pair<unsigned int, unsigned int>, unsigned int> index_map;
-    std::vector<unsigned int> temp_face_indices;
-
-    std::string line;
-    while (std::getline(file, line)) {
-        std::stringstream ss(line);
-
-        std::string prefix;
-        ss >> prefix;
-
-        if (prefix == "v") { //vertex position
-            DirectX::XMFLOAT3 position;
-            ss >> position.x >> position.y >> position.z;
-            temp_positions.push_back(position);
-        }
-        else if (prefix == "vn") { //vertex normal
-            DirectX::XMFLOAT3 normal;
-            ss >> normal.x >> normal.y >> normal.z;
-            temp_normals.push_back(normal);
-        }
-        else if (prefix == "f") {
-            temp_face_indices.clear();
-
-            std::string vertexindex_slashslash_normalindex;
-            while (ss >> vertexindex_slashslash_normalindex) {
-                size_t slash_pos = vertexindex_slashslash_normalindex.find("//");
-
-                std::string vertex_index_str = vertexindex_slashslash_normalindex.substr(0, slash_pos);
-                std::string normal_index_str = vertexindex_slashslash_normalindex.substr(slash_pos + 2);
-                unsigned int vertex_index = std::stoi(vertex_index_str) - 1;
-                unsigned int normal_index = std::stoi(normal_index_str) - 1;
-
-                // Check if the vertex and normal index pair already exists in the map
-                auto it = index_map.find({ vertex_index, normal_index });
-
-                if (it != index_map.end()) {
-                    temp_face_indices.push_back(it->second);
-                }
-                else {
-                    // If it doesn't exist, create a new vertex and add it to the model
-                    Vertex vertex;
-                    vertex.position = temp_positions[vertex_index];
-                    vertex.normal = temp_normals[normal_index];
-                    unsigned int new_index = static_cast<unsigned int>(model.vertices.size());
-                    model.vertices.push_back(vertex);
-                    // Store the new index in the map
-                    index_map[{ vertex_index, normal_index }] = new_index;
-                    temp_face_indices.push_back(new_index);
-                }
-            }
-
-            for (int i = 0; i < (int)temp_face_indices.size() - 2; i++) {
-                model.indicies.push_back(temp_face_indices[0]);
-                model.indicies.push_back(temp_face_indices[i + 1]);
-                model.indicies.push_back(temp_face_indices[i + 2]);
-            }
-        }
-    }
-    file.close();  // Close the file
-    return model;
-}
+Model load_model_from_obj(const std::string& path);
 
 typedef struct _SceneConstants {
 	DirectX::XMMATRIX model; //4x4 flotantes = 64 bytes
@@ -127,12 +57,13 @@ typedef struct _SceneConstants {
 class Application
 {
 private:
-    //Cosas de application 
+	//Cosas de application 
 	void ThrowIfFailed(HRESULT hr, const std::string& msg);
 	void ThrowIfFailed(HRESULT hr);
 	void setupGeometry();
 	void setupShaders();
 	void SetupConstantBuffer();
+	void SetupFence();
 	void setupDevice();
 	void setupCommandQueue();
 	void setupCommandAllocator();
@@ -171,6 +102,16 @@ private:
 	UINT rtvIncrementSize;
 	void* mappedMemory;
 	SceneConstants sceneConstants;
+	ID3D12Fence* fence;
+	UINT64 fenceValue;
+	HANDLE fenceEvent;
+	ID3D12RootSignature* rootsSignature;
+	Model model;
+	ID3D12Resource* vertexBuffer;
+	ID3D12Resource* vertexBufferUpload;
+	ID3D12Resource* indexBuffer;
+	ID3D12Resource* indexBufferUpload;
+	ID3D12DescriptorHeap* dsvHeap;
 
 	unsigned int triangle_angle;
 
