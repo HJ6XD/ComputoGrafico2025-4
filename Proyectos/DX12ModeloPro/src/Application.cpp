@@ -512,17 +512,15 @@ void Application::setupSignature()
 {
 	//Root signature is like have many object buffers and textures we want to use when drawing.
 	//For our rotating triangle, we only need a single constant that is going to be our angle
-	D3D12_ROOT_PARAMETER root_parameters[1] = {};
-	root_parameters[0].ParameterType = D3D12_ROOT_PARAMETER_TYPE_32BIT_CONSTANTS;
-	root_parameters[0].Constants.Num32BitValues = 1;
-	root_parameters[0].Constants.ShaderRegister = 0;
-	root_parameters[0].Constants.RegisterSpace = 0;
-	root_parameters[0].ShaderVisibility = D3D12_SHADER_VISIBILITY_VERTEX;
+	D3D12_ROOT_PARAMETER rootParameters[1] = {};
+	rootParameters[0].ParameterType = D3D12_ROOT_PARAMETER_TYPE_CBV;
+	rootParameters[0].Constants.Num32BitValues = 0;
+	rootParameters[0].ShaderVisibility = D3D12_SHADER_VISIBILITY_VERTEX;
 
 	rootSignature = nullptr;
 	D3D12_ROOT_SIGNATURE_DESC root_signature_desc = {};
-	root_signature_desc.NumParameters = _countof(root_parameters);
-	root_signature_desc.pParameters = root_parameters;
+	root_signature_desc.NumParameters = _countof(rootParameters);
+	root_signature_desc.pParameters = rootParameters;
 	root_signature_desc.NumStaticSamplers = 0;
 	root_signature_desc.pStaticSamplers = nullptr;
 	root_signature_desc.Flags = D3D12_ROOT_SIGNATURE_FLAG_ALLOW_INPUT_ASSEMBLER_INPUT_LAYOUT;
@@ -560,9 +558,9 @@ void Application::setupCommandList()
 
 void Application::update()
 {
-	++triangle_angle;
+	++sceneConstants.triangle_angle;
 
-	sceneConstants.eye = DirectX::XMVectorSet(0.0f,0.0f,-3.0f,1.0f);
+	sceneConstants.eye = DirectX::XMVectorSet(0.0f,0.0f,-5.0f,1.0f);
 	sceneConstants.center = DirectX::XMVectorSet(0.0f,0.0f,0.0f,1.0f);
 	sceneConstants.up = DirectX::XMVectorSet(0.0f,1.0f,0.0f,1.0f);
 
@@ -576,8 +574,8 @@ void Application::update()
 		1000.0f);*/
 	sceneConstants.projection = DirectX::XMMatrixIdentity();
 	DirectX::XMVECTOR rotationAxis = DirectX::XMVectorSet(0.0f, 0.0f, 1.0f, 1.0f);
-	//sceneConstants.model = DirectX::XMMatrixTranspose(DirectX::XMMatrixScaling(.5f, .5f, .5f));
-	sceneConstants.model = DirectX::XMMatrixRotationAxis(rotationAxis, DirectX::XMConvertToRadians(triangle_angle));
+	sceneConstants.model = DirectX::XMMatrixScaling(.5f, .5f, .5f);
+	//ceneConstants.model = DirectX::XMMatrixRotationAxis(rotationAxis, DirectX::XMConvertToRadians(triangle_angle));
 
 }
 
@@ -615,15 +613,16 @@ void Application::draw()
 	D3D12_RECT scissor_rect = { 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT };
 	commandList->RSSetViewports(1, &viewport);
 	commandList->RSSetScissorRects(1, &scissor_rect);
-
 	commandList->OMSetRenderTargets(1, &rtvHandle, FALSE, &dsv_handle);
 	commandList->IASetPrimitiveTopology(D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 	commandList->SetGraphicsRootSignature(rootSignature.Get());
 	commandList->SetPipelineState(pipelineState.Get());
 
-	//memcpy(mappedMemory, &sceneConstants, sizeof(SceneConstants));	
+	memcpy(mappedMemory, &sceneConstants, sizeof(SceneConstants));	
+	commandList->SetGraphicsRootConstantBufferView(0, constantBuffer->GetGPUVirtualAddress());
+
 	// Draw the triangle
-	commandList->SetGraphicsRoot32BitConstant(0, triangle_angle, 0);
+	//commandList->SetGraphicsRoot32BitConstant(0, triangle_angle, 0);
 
 	D3D12_VERTEX_BUFFER_VIEW vertex_buffer_view = {};
 	vertex_buffer_view.BufferLocation = vertexBuffer->GetGPUVirtualAddress();
@@ -638,6 +637,7 @@ void Application::draw()
 	commandList->IASetIndexBuffer(&index_buffer_view);
 
 	commandList->DrawIndexedInstanced(model.indicies.size(), 1, 0, 0, 0);
+
 	
 	/*{
 
@@ -655,17 +655,14 @@ void Application::draw()
 
 	ID3D12CommandList* commandLists[] = { commandList.Get()};
 	
-	std::cout << "antes de excecute command list" << std::endl;
 	commandQueue->ExecuteCommandLists(1, commandLists);
-	std::cout << "despues de excecute command list" << std::endl;
 	
-
 	h = swapChain->Present(1, 0);
 
-	//const UINT64 current_fence_value = ++fenceValue;
-	//h = commandQueue->Signal(fence, current_fence_value);
+	/*const UINT64 current_fence_value = ++fenceValue;
+	h = commandQueue->Signal(fence, current_fence_value);
 
-	/*if (fence->GetCompletedValue() < current_fence_value) {
+	if (fence->GetCompletedValue() < current_fence_value) {
 		h = fence->SetEventOnCompletion(current_fence_value, fenceEvent);
 		WaitForSingleObject(fenceEvent, INFINITE);
 	}*/

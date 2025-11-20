@@ -3,7 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\DXModel\\shader.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{E7924409-090B-4A0A-982C-98CA9978DF37}|DXModel\\DXModel.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DXModel\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E7924409-090B-4A0A-982C-98CA9978DF37}|DXModel\\DXModel.vcxproj|solutionrelative:DXModel\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05C27194-C6FE-46F4-A8B4-D579A4F38F8E}|DX12ModeloPro\\DX12ModeloPro.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -14,16 +15,23 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DX12ModeloPro\\Shaders\\shader.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05C27194-C6FE-46F4-A8B4-D579A4F38F8E}|DX12ModeloPro\\DX12ModeloPro.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{05C27194-C6FE-46F4-A8B4-D579A4F38F8E}|DX12ModeloPro\\DX12ModeloPro.vcxproj|solutionrelative:DX12ModeloPro\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7924409-090B-4A0A-982C-98CA9978DF37}|DXModel\\DXModel.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DXModel\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E7924409-090B-4A0A-982C-98CA9978DF37}|DXModel\\DXModel.vcxproj|solutionrelative:DXModel\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A9442124-313A-4420-BF73-875172878C59}|DirectXApplication_Profe\\DirectXApplication_Profe.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DirectXApplication_Profe\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A9442124-313A-4420-BF73-875172878C59}|DirectXApplication_Profe\\DirectXApplication_Profe.vcxproj|solutionrelative:DirectXApplication_Profe\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05C27194-C6FE-46F4-A8B4-D579A4F38F8E}|DX12ModeloPro\\DX12ModeloPro.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\include\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{05C27194-C6FE-46F4-A8B4-D579A4F38F8E}|DX12ModeloPro\\DX12ModeloPro.vcxproj|solutionrelative:DX12ModeloPro\\include\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9442124-313A-4420-BF73-875172878C59}|DirectXApplication_Profe\\DirectXApplication_Profe.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DirectXApplication_Profe\\include\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A9442124-313A-4420-BF73-875172878C59}|DirectXApplication_Profe\\DirectXApplication_Profe.vcxproj|solutionrelative:DirectXApplication_Profe\\include\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\DXModel\\shader.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05C27194-C6FE-46F4-A8B4-D579A4F38F8E}|DX12ModeloPro\\DX12ModeloPro.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{05C27194-C6FE-46F4-A8B4-D579A4F38F8E}|DX12ModeloPro\\DX12ModeloPro.vcxproj|solutionrelative:DX12ModeloPro\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,20 +40,88 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 172,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 142,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DXModel\\main.cpp",
               "RelativeDocumentMoniker": "DXModel\\main.cpp",
               "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DXModel\\main.cpp",
               "RelativeToolTip": "DXModel\\main.cpp",
-              "ViewState": "AgIAADQCAAAAAAAAAAApwDICAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAADACAAAAAAAAAAAqwF8CAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-10T23:15:19.118Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Application.h",
+              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\include\\Application.h",
+              "RelativeDocumentMoniker": "DX12ModeloPro\\include\\Application.h",
+              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\include\\Application.h",
+              "RelativeToolTip": "DX12ModeloPro\\include\\Application.h",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAUwF8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-10T23:15:41.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "shader.hlsl",
+              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\DXModel\\shader.hlsl",
+              "RelativeDocumentMoniker": "..\\..\\DXModel\\shader.hlsl",
+              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\DXModel\\shader.hlsl",
+              "RelativeToolTip": "..\\..\\DXModel\\shader.hlsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-11-11T01:32:47.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Application.cpp",
+              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DirectXApplication_Profe\\src\\Application.cpp",
+              "RelativeDocumentMoniker": "DirectXApplication_Profe\\src\\Application.cpp",
+              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DirectXApplication_Profe\\src\\Application.cpp",
+              "RelativeToolTip": "DirectXApplication_Profe\\src\\Application.cpp",
+              "ViewState": "AgIAAGsBAAAAAAAAAAAowHkBAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-13T00:14:21.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Application.h",
+              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DirectXApplication_Profe\\include\\Application.h",
+              "RelativeDocumentMoniker": "DirectXApplication_Profe\\include\\Application.h",
+              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DirectXApplication_Profe\\include\\Application.h",
+              "RelativeToolTip": "DirectXApplication_Profe\\include\\Application.h",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-13T00:17:01.108Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 148,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Application.cpp",
+              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\src\\Application.cpp",
+              "RelativeDocumentMoniker": "DX12ModeloPro\\src\\Application.cpp",
+              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\src\\Application.cpp",
+              "RelativeToolTip": "DX12ModeloPro\\src\\Application.cpp",
+              "ViewState": "AgIAABMCAAAAAAAAAAAqwE0CAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-06T01:48:09.234Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -59,49 +135,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Application.h",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\include\\Application.h",
-              "RelativeDocumentMoniker": "DX12ModeloPro\\include\\Application.h",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\include\\Application.h",
-              "RelativeToolTip": "DX12ModeloPro\\include\\Application.h",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAcwHEAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-10T23:15:41.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "shader.hlsl",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\DXModel\\shader.hlsl",
-              "RelativeDocumentMoniker": "..\\..\\DXModel\\shader.hlsl",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\DXModel\\shader.hlsl",
-              "RelativeToolTip": "..\\..\\DXModel\\shader.hlsl",
-              "ViewState": "AgIAABoAAAAAAAAAAAAkwDAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-11-11T01:32:47.122Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 118,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Application.cpp",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\src\\Application.cpp",
-              "RelativeDocumentMoniker": "DX12ModeloPro\\src\\Application.cpp",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\src\\Application.cpp",
-              "RelativeToolTip": "DX12ModeloPro\\src\\Application.cpp",
-              "ViewState": "AgIAAJMBAAAAAAAAAAAEwDECAAABAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\src\\main.cpp",
+              "RelativeDocumentMoniker": "DX12ModeloPro\\src\\main.cpp",
+              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\src\\main.cpp",
+              "RelativeToolTip": "DX12ModeloPro\\src\\main.cpp",
+              "ViewState": "AgIAACsAAAAAAAAAAAApwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-06T01:48:09.234Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T23:15:24.092Z"
             },
             {
               "$type": "Document",
@@ -111,23 +153,9 @@
               "RelativeDocumentMoniker": "DX12ModeloPro\\Shaders\\shader.hlsl",
               "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\Shaders\\shader.hlsl",
               "RelativeToolTip": "DX12ModeloPro\\Shaders\\shader.hlsl",
-              "ViewState": "AgIAADIAAAAAAAAAAAAkwEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-11-11T01:33:31.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\src\\main.cpp",
-              "RelativeDocumentMoniker": "DX12ModeloPro\\src\\main.cpp",
-              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\DX12ModeloPro\\src\\main.cpp",
-              "RelativeToolTip": "DX12ModeloPro\\src\\main.cpp",
-              "ViewState": "AgIAACsAAAAAAAAAAAApwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-10T23:15:24.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T01:33:31.935Z"
             }
           ]
         }

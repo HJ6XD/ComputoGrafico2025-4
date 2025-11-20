@@ -31,23 +31,19 @@ cbuffer SceneConstants : register(b0)
 PSInput VSMain(VSInput input) {
     PSInput output;
         
+    //printf(angle);
     // Compute the rotation matrix
     float rotation_speed = -0.01f;
     
     float cosTheta = cos(angle * rotation_speed);
-    float sinTheta = sin(angle * rotation_speed);
+    float sinTheta = sin(angle * rotation_speed);    
     
-    float2 rotated_pos;
-    rotated_pos.x = input.position.x * cosTheta - input.position.y * sinTheta;
-    rotated_pos.y = input.position.x * sinTheta + input.position.y * cosTheta;
-    output.position = float4(rotated_pos.x, input.position.y, rotated_pos.y, 1.0f);
+    float4 localPos = float4(input.position.xyz, 1.0f);
+    float4 worldPos = mul(localPos, model);
+    float4 cameraPos = mul(worldPos, view);
+    float4 perspectivePos = mul(cameraPos, projection);
     
-    
-    //float4 localPos = float4(rotated_pos.x, rotated_pos.y, 0.0f, 1.0f);
-    //float4 worldPos = mul(localPos, model);
-    //float4 cameraPos = mul(worldPos, view);
-    //float4 perspectivePos = mul(cameraPos, projection);
-    
+    output.position = localPos;
     //output.position = perspectivePos;
     
     float rotated_normal_x = input.normal.x * cosTheta - input.normal.z * sinTheta;
