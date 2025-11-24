@@ -311,7 +311,6 @@ void Application::update()
 	sceneConstants.eye = DirectX::XMVectorSet(0.0f,0.0f,-3.0f,1.0f);
 	sceneConstants.center = DirectX::XMVectorSet(0.0f,0.0f,0.0f,1.0f);
 	sceneConstants.up = DirectX::XMVectorSet(0.0f,1.0f,0.0f,1.0f);
-
 	sceneConstants.view = DirectX::XMMatrixLookAtLH(sceneConstants.eye, sceneConstants.center, sceneConstants.up);
 
 	float aspect = static_cast<float>(WINDOW_WIDTH) / static_cast<float>(WINDOW_HEIGHT);
