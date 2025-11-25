@@ -12,6 +12,12 @@ void MiCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
     app.keyCallback(key, scancode, action, mods);
 }
 
+void MiMousePosCallBack(GLFWwindow* window, double xpos, double ypos) {
+    app.MousePosCallBack(xpos, ypos);
+}
+void MiMouseScrollCallBack(GLFWwindow* window, double xoffset, double yoffset) {
+    app.MouseScrollCallBack(xoffset, yoffset);
+}
 int main(void)
 {
     if (!glfwInit()) return -1;
@@ -19,11 +25,13 @@ int main(void)
     glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
     glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 
-    app.window = glfwCreateWindow(app.WINDOW_WIDTH, app.WINDOW_HEIGHT, "Conejo que Gira JAJAJAJ", nullptr, nullptr);
+    app.window = glfwCreateWindow(app.WINDOW_WIDTH, app.WINDOW_HEIGHT, "Conejo que Gira", nullptr, nullptr);
     if (!app.window) { glfwTerminate(); return -1; }
 
     glfwMakeContextCurrent(app.window);
     glfwSetKeyCallback(app.window, MiCallback);
+    glfwSetCursorPosCallback(app.window, MiMousePosCallBack);
+    glfwSetScrollCallback(app.window, MiMouseScrollCallBack);
 
     app.setup();
 

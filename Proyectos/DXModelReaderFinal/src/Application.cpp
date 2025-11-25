@@ -21,6 +21,21 @@ void Application::keyCallback(int key, int, int action, int) {
         glfwSetWindowShouldClose(window, true);
 }
 
+void Application::MousePosCallBack(double xpos, double ypos)
+{
+    double deltax = lastXMouse - xpos;
+    double deltay = lastYMouse - ypos;
+    lastXMouse = xpos; lastYMouse = ypos;
+    xRot += deltax * sensitivity;
+    yRot += deltay * sensitivity;
+}
+
+void Application::MouseScrollCallBack(double xoffset, double yoffset)
+{
+    zDist += yoffset * sensitivity;
+    std::cout << zDist << std::endl;
+}
+
 void Application::setBlendState(D3D12_BLEND_DESC& d) {
     d = {};
     d.AlphaToCoverageEnable = FALSE;
@@ -412,11 +427,12 @@ void Application::setup() {
     setupConstantBuffer();
     setupGeometry();
     uploadStaticBuffers();
+    sensitivity = 1.2f;
 }
 
 void Application::update() {
     sceneConstants.triangleAngle++;
-    sceneConstants.eye = XMVectorSet(0.0f, 0.0f, -3.0f, 1.0f); // Posición de la cámara
+    sceneConstants.eye = XMVectorSet(0.0f, 0.0f, -3.0f - zDist, 1.0f); // Posición de la cámara
     sceneConstants.center = XMVectorSet(0.0f, 0.0f, 0.0f, 1.0f);  // Punto al que mira
     sceneConstants.up = XMVectorSet(0.0f, 1.0f, 0.0f, 1.0f);    // Vector 'Up'
 
@@ -426,9 +442,11 @@ void Application::update() {
 	sceneConstants.projection = XMMatrixPerspectiveFovLH(XMConvertToRadians(45.0f), aspect, 0.1f, 1000.0f); // Proyección
 
 	// Modelo: rotación alrededor del eje Y sin angulo variable
-	XMVECTOR axis = XMVectorSet(0.0f, 1.0f, 0.0f, 1.0f); // Eje Y
-	float angleRad = XMConvertToRadians((float)(sceneConstants.triangleAngle % 360)); // Ángulo en radianes
-    sceneConstants.model = XMMatrixRotationAxis(axis,angleRad) * XMConvertToRadians(sceneConstants.triangleAngle);
+	XMVECTOR xAxis = XMVectorSet(0.0f, 1.0f, 0.0f, 1.0f); // Eje Y
+	XMVECTOR yAxis = XMVectorSet(1.0f, 0.0f, 0.0f, 1.0f); // Eje Y
+	float xAngleRad = XMConvertToRadians(xRot); // Ángulo x en radianes
+	float yAngleRad = XMConvertToRadians(yRot); // Ángulo y en radianes
+    sceneConstants.model = XMMatrixRotationAxis(xAxis,xAngleRad) * XMMatrixRotationAxis(yAxis, yAngleRad);
 
     memcpy(mappedMemory, &sceneConstants, sizeof(SceneConstants));// Sizeof es la cantidad de bits a copiar
 }

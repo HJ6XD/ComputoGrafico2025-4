@@ -125,6 +125,12 @@ private:
     UINT64 fenceValue = 0;
     HANDLE fenceEvent = nullptr;
 
+    //Cosos para que gire con el mouse
+    double lastXMouse, lastYMouse;
+    int xRot, yRot;
+    double sensitivity;
+    double zDist;
+
 public:
     const int WINDOW_WIDTH = 1024;
     const int WINDOW_HEIGHT = 768;
@@ -134,4 +140,6 @@ public:
     void update();
     void draw();
     void keyCallback(int key, int scancode, int action, int mods);
+    void MousePosCallBack(double xpos, double ypos);
+    void MouseScrollCallBack(double xoffset, double yoffset);
 };
