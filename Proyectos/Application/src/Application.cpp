@@ -115,69 +115,69 @@ void Application::CubeSetUp()
 		//Colores
 		 //Cara Izquierda
 		//Color Triangulo 1
-		1.0f, 0.0f,  0.0f, 1.0f, //Color Vertice 1
-		1.0f, 0.0f,  0.0f, 1.0f, //Color Vertice 2
-		1.0f, 0.0f,  0.0f, 1.0f, //Color Vertice 3
+		1.0, 0.0,  0.0, 1.0, //Color Vertice 1
+		1.0, 0.0,  0.0, 1.0, //Color Vertice 2
+		1.0, 0.0,  0.0, 1.0, //Color Vertice 3
 
-		//Color Triangulo 2
-		1.0f, 0.0f,  0.0f, 1.0f, //Color Vertice 1
-		1.0f, 0.0f,  0.0f, 1.0f, //Color Vertice 2
-		1.0f, 0.0f,  0.0f, 1.0f, //Color Vertice 3
+		//Clor Tiangul 2
+		1.0, 0.0,  0.0, 1.0, //Color Vertice 1
+		1.0, 0.0,  0.0, 1.0, //Color Vertice 2
+		1.0, 0.0,  0.0, 1.0, //Color Vertice 3
 
-		//Cara Derecha
-		//Color Triangulo 1
-		0.0f, 1.0f,  0.0f, 1.0f, //Color Vertice 1
-		0.0f, 1.0f,  0.0f, 1.0f, //Color Vertice 2
-		0.0f, 1.0f,  0.0f, 1.0f, //Color Vertice 3
+		//Cra Deecha
+		//Clor Tiangul 1
+		0.0, 1.0,  0.0, 1.0, //Color Vertice 1
+		0.0, 1.0,  0.0, 1.0, //Color Vertice 2
+		0.0, 1.0,  0.0, 1.0, //Color Vertice 3
 
-		//Color Triangulo 2
-		0.0f, 1.0f,  0.0f, 1.0f, //Color Vertice 1
-		0.0f, 1.0f,  0.0f, 1.0f, //Color Vertice 2
-		0.0f, 1.0f,  0.0f, 1.0f, //Color Vertice 3
+		//Clor Tiangul 2
+		0.0, 1.0,  0.0, 1.0, //Color Vertice 1
+		0.0, 1.0,  0.0, 1.0, //Color Vertice 2
+		0.0, 1.0,  0.0, 1.0, //Color Vertice 3
 
-		//Cara Abajo
-		//Color Triangulo 1
-		0.0f, 0.0f,  1.0f, 1.0f, //Color Vertice 1
-		0.0f, 0.0f,  1.0f, 1.0f, //Color Vertice 2
-		0.0f, 0.0f,  1.0f, 1.0f, //Color Vertice 3
+		//Cra Abjo
+		//Clor Tiangul 1
+		0.0, 0.0,  1.0, 1.0, //Color Vertice 1
+		0.0, 0.0,  1.0, 1.0, //Color Vertice 2
+		0.0, 0.0,  1.0, 1.0, //Color Vertice 3
 
-		//Color Triangulo 2
-		0.0f, 0.0f,  1.0f, 1.0f, //Color Vertice 1
-		0.0f, 0.0f,  1.0f, 1.0f, //Color Vertice 2
-		0.0f, 0.0f,  1.0f, 1.0f, //Color Vertice 3
+		//Clor Tiangul 2
+		0.0, 0.0,  1.0, 1.0, //Color Vertice 1
+		0.0, 0.0,  1.0, 1.0, //Color Vertice 2
+		0.0, 0.0,  1.0, 1.0, //Color Vertice 3
 
-		//Cara Arriba
-		//Color Triangulo 1
-		1.0f, 1.0f,  0.0f, 1.0f, //Color Vertice 1
-		1.0f, 1.0f,  0.0f, 1.0f, //Color Vertice 2
-		1.0f, 1.0f,  0.0f, 1.0f, //Color Vertice 3
+		//Cra Ariba
+		//Clor Tiangul 1
+		1.0, 1.0,  0.0, 1.0, //Color Vertice 1
+		1.0, 1.0,  0.0, 1.0, //Color Vertice 2
+		1.0, 1.0,  0.0, 1.0, //Color Vertice 3
 
-		//Color Triangulo 2
-		1.0f, 1.0f,  0.0f, 1.0f, //Color Vertice 1
-		1.0f, 1.0f,  0.0f, 1.0f, //Color Vertice 2
-		1.0f, 1.0f,  0.0f, 1.0f, //Color Vertice 3
+		//Clor Tiangul 2
+		1.0, 1.0,  0.0, 1.0, //Color Vertice 1
+		1.0, 1.0,  0.0, 1.0, //Color Vertice 2
+		1.0, 1.0,  0.0, 1.0, //Color Vertice 3
 
-		//Cara Atras
-		//Color Triangulo 1
-		1.0f, 0.0f,  1.0f, 1.0f, //Color Vertice 1
-		1.0f, 0.0f,  1.0f, 1.0f, //Color Vertice 2
-		1.0f, 0.0f,  1.0f, 1.0f, //Color Vertice 3
+		//Cra Atas
+		//Clor Tiangul 1
+		1.0, 0.0,  1.0, 1.0, //Color Vertice 1
+		1.0, 0.0,  1.0, 1.0, //Color Vertice 2
+		1.0, 0.0,  1.0, 1.0, //Color Vertice 3
 
-		//Color Triangulo 2
-		1.0f, 0.0f,  1.0f, 1.0f, //Color Vertice 1
-		1.0f, 0.0f,  1.0f, 1.0f, //Color Vertice 2
-		1.0f, 0.0f,  1.0f, 1.0f, //Color Vertice 3
+		//Clor Tiangul 2
+		1.0, 0.0,  1.0, 1.0, //Color Vertice 1
+		1.0, 0.0,  1.0, 1.0, //Color Vertice 2
+		1.0, 0.0,  1.0, 1.0, //Color Vertice 3
 
-		//Cara Alfrente
-		//Color Triangulo 1
-		0.0f, 1.0f,  1.0f, 1.0f, //Color Vertice 1
-		0.0f, 1.0f,  1.0f, 1.0f, //Color Vertice 2
-		0.0f, 1.0f,  1.0f, 1.0f, //Color Vertice 3
+		//Cra Alrente
+		//Clor Tiangul 1
+		0.0, 1.0,  1.0, 1.0, //Color Vertice 1
+		0.0, 1.0,  1.0, 1.0, //Color Vertice 2
+		0.0, 1.0,  1.0, 1.0, //Color Vertice 3
 
-		//Color Triangulo 2
-		0.0f, 1.0f,  1.0f, 1.0f, //Color Vertice 1
-		0.0f, 1.0f,  1.0f, 1.0f, //Color Vertice 2
-		0.0f, 1.0f,  1.0f, 1.0f, //Color Vertice 3
+		//Clor Tiangul 2
+		0.0, 1.0,  1.0, 1.0, //Color Vertice 1
+		0.0, 1.0,  1.0, 1.0, //Color Vertice 2
+		0.0, 1.0,  1.0, 1.0, //Color Vertice 3
 	};
 
 	//Crear Vertex Array Object

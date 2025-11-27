@@ -1,26 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\",
+  "WorkspaceRootPath": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F16C06B8-3284-4BC8-9446-322729A98012}|DXModelReaderFinal\\DXModelReader.vcxproj|C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\DXModelReaderFinal\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F16C06B8-3284-4BC8-9446-322729A98012}|DXModelReaderFinal\\DXModelReader.vcxproj|solutionrelative:DXModelReaderFinal\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F16C06B8-3284-4BC8-9446-322729A98012}|DXModelReaderFinal\\DXModelReader.vcxproj|C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\DXModelReaderFinal\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F16C06B8-3284-4BC8-9446-322729A98012}|DXModelReaderFinal\\DXModelReader.vcxproj|solutionrelative:DXModelReaderFinal\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|solutionrelative:Application\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F16C06B8-3284-4BC8-9446-322729A98012}|DXModelReaderFinal\\DXModelReader.vcxproj|C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\DXModelReaderFinal\\include\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F16C06B8-3284-4BC8-9446-322729A98012}|DXModelReaderFinal\\DXModelReader.vcxproj|solutionrelative:DXModelReaderFinal\\include\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|solutionrelative:Application\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79E11F32-743F-4840-A2FE-686303A4E3C6}|Application\\Application.vcxproj|solutionrelative:Application\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,46 +18,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 259,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\DXModelReaderFinal\\src\\main.cpp",
-              "RelativeDocumentMoniker": "DXModelReaderFinal\\src\\main.cpp",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\DXModelReaderFinal\\src\\main.cpp",
-              "RelativeToolTip": "DXModelReaderFinal\\src\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-24T19:54:35.421Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Application.cpp",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\DXModelReaderFinal\\src\\Application.cpp",
-              "RelativeDocumentMoniker": "DXModelReaderFinal\\src\\Application.cpp",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\DXModelReaderFinal\\src\\Application.cpp",
-              "RelativeToolTip": "DXModelReaderFinal\\src\\Application.cpp",
-              "ViewState": "AgIAAKABAAAAAAAAAAAAALIBAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-24T23:15:07.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Application.h",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\DXModelReaderFinal\\include\\Application.h",
-              "RelativeDocumentMoniker": "DXModelReaderFinal\\include\\Application.h",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\DXModelReaderFinal\\include\\Application.h",
-              "RelativeToolTip": "DXModelReaderFinal\\include\\Application.h",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAAAI8AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-24T19:54:30.777Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         },
@@ -79,28 +36,28 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Application.cpp",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\Application.cpp",
-              "RelativeDocumentMoniker": "Application\\src\\Application.cpp",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\Application.cpp",
-              "RelativeToolTip": "Application\\src\\Application.cpp",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADgBAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\main.cpp",
+              "RelativeDocumentMoniker": "Application\\src\\main.cpp",
+              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\main.cpp",
+              "RelativeToolTip": "Application\\src\\main.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-24T23:18:03.264Z",
+              "WhenOpened": "2025-11-27T01:15:51.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\main.cpp",
-              "RelativeDocumentMoniker": "Application\\src\\main.cpp",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\main.cpp",
-              "RelativeToolTip": "Application\\src\\main.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Application.cpp",
+              "DocumentMoniker": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\Application.cpp",
+              "RelativeDocumentMoniker": "Application\\src\\Application.cpp",
+              "ToolTip": "C:\\Users\\dj271\\Desktop\\Computo Gr\u00E1fico\\ComputoGrafico2025-4\\Proyectos\\Application\\src\\Application.cpp",
+              "RelativeToolTip": "Application\\src\\Application.cpp",
+              "ViewState": "AgIAADIBAAAAAAAAAAAAAAQBAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-24T23:09:25.745Z",
+              "WhenOpened": "2025-11-24T23:18:03.264Z",
               "EditorCaption": ""
             }
           ]
